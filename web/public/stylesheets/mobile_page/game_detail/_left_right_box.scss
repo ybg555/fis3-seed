@@ -1,0 +1,46 @@
+﻿@import "../mixin.scss";
+/* 左侧游戏下载 */
+
+.info-con-730{
+	float:right;
+	width:728px;
+	border:1px solid #ebebeb;
+	margin-bottom: 15px;
+	.little-notice{
+		height:26px;
+		font-size:16px;
+		line-height:26px;
+		margin:20px 25px;
+		overflow:hidden;
+		position:relative;
+		background:#fff9f3;
+		ul{
+			position:relative;
+		}
+		.name{
+			padding-left:30px;
+			color:#f60;
+			@include icobg;
+			background-position:-178px -495px;
+		}
+	}
+}
+.info-con-250{
+	width:248px;
+	float:left;
+	background:#fff;
+	border:1px solid #ebebeb;
+	position:relative;
+	&.active{
+		position:fixed;
+		_position:relative;
+		top: 44px;
+		
+	}
+	&.bottom{
+		position:absolute;
+		bottom:15px;
+		left:0;
+		top:auto;
+	}
+}

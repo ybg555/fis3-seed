@@ -1,0 +1,202 @@
+﻿.activation-left{
+	
+}
+.radius80{
+	width: 80px;
+	height: 80px;
+	display: block;
+	background: url(http://www.9game.cn/public/images/pc/pc_new/img_radius.png) no-repeat 0 -450px;
+	_background: url(http://www.9game.cn/public/images/pc/pc_new/img_radius.gif) no-repeat 0 -450px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.activation-con{
+	margin-bottom:10px;
+	.box-text{
+		padding-top:10px;
+	}
+	
+	.icon-word-list{
+		height:200px;
+		li{
+			width:184px;
+			height:80px;
+			margin-left:4px;
+			padding:10px 0 10px 10px;
+			float:left;
+			overflow:hidden;
+			cursor:pointer;
+			&:hover{
+				background:#f7f7f7;
+				.tit{
+					color:#f60;
+				}
+			}
+		}
+		a:hover{
+			_display:block;
+			.btn{
+				_color:#fff;
+				_background:#ff8a00;
+				_border-color:#ff8a00;
+			}
+		}
+		.pic{
+			width:80px;
+			margin:0 10px 0 0;
+			float:left;
+			position:relative;
+			_cursor:pointer;
+			img{
+				width:80px;
+				height:80px;
+			}
+		}
+		.right-text{
+			width:90px;
+			_width:90px;
+			height:80px;
+			margin-top:4px;
+			float:left;
+			_cursor:pointer;
+			.tit{
+				width:100%;
+				font-size:14px;
+				line-height:14px;
+				margin-bottom:10px;
+				
+				a{
+					max-width:100%;
+					_width:100%;
+					display:block;
+					@include hidden;
+				}
+			}
+			.text{
+				width:100%;
+				height:14px;
+				color:#666;
+				font-size:12px;
+				line-height:14px;
+				margin-bottom:10px;
+				overflow:hidden;
+				a{
+					color:#666;
+				}
+			}
+			.btn{
+				display:block;
+				width:78px;
+				height:22px;
+				border:1px solid #ccc;
+				line-height:22px;
+				font-size:12px;
+				text-align:center;
+				cursor:pointer;
+				@include btnbg;
+				@include bor-radius;
+				&:hover{
+					color:#fff;
+					background:#ff8a00;
+					border-color:#ff8a00;
+				}
+				&.no{
+					background:#ccc;
+					border-color:#ccc;
+					color:#fff;
+					cursor:default;
+				}
+			}
+		}
+		.corner-nine {
+		  position: absolute;
+		  left: 0;
+		  top: 0;
+		  display: block;
+		  width: 54px;
+		  height: 54px;
+		  background: url(http://portal.ucgc.ucfly.com/public/images/pc/nine_act/nine_active.png) no-repeat 0 -74px;
+		}
+	}
+}
+.today-talk-con{
+	.box-text{
+		border-bottom:1px solid #f5f5f5;
+	}
+	.little-tit{
+		.tit{
+			color:#666;
+			font-size:16px;
+			position:absolute;
+			left: 50px;
+			top:-2px;
+			@include hidden;
+			&:hover{
+				color:#f80;
+			}
+		}
+	}
+	.des{
+		height:44px;
+		overflow:hidden;
+	}
+	.little-tit h1, .little-tit h2, .little-tit h3{
+		left:0;
+		top:0;
+	}
+	.today{
+		margin-top:14px;
+		padding:0 15px 12px;;
+		margin-bottom:12px;
+		border-bottom:1px dotted #ebebeb;
+		position:relative;
+		.icon{
+			width:70px;
+			height:70px;
+			display:block;
+			left:15px;
+			top:0;
+			position:absolute;
+			text-indent:-555px;
+			overflow:hidden;
+			background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_icon.png) no-repeat 0 0;
+		}
+		.new{
+			height:70px;
+			font-size:12px;
+			line-height:22px;
+			color:#666;
+			padding-left:84px;
+			
+		}
+		.more{
+			color:#f80;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	.back{
+		padding-left:15px;
+		.little-tit{
+			height:21px;
+		}
+		.news-list{
+			padding:0;
+			height:48px;
+			overflow:hidden;
+			margin-left:-25px;
+			li{
+				width:260px;
+				line-height: 24px;
+				_line-height: 24px;
+				float:left;
+				margin-left:25px;
+			}
+			.date{
+				margin:0;
+			}
+		}
+	}
+}

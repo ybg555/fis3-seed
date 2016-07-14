@@ -1,0 +1,51 @@
+﻿.side-ctrl{
+	border-bottom:1px solid #f5f5f5;
+	margin-bottom:35px;
+	.box-text{
+		padding:10px 0 5px;
+	}
+	.news-list{
+		display:none;
+		padding:0;
+		li a{
+			max-width: 100%;
+			_width: 95%;
+		}
+		&.current{
+			display:block;
+		}
+	}
+}
+.inside-tag{
+	width:228px;
+	height:28px;
+	background:#fafafa;
+	border:1px solid #e6e6e6;
+	margin:0 auto 10px;
+	li{
+		width:113px;
+		float:left;
+		text-align:center;
+		line-height:28px;
+		font-size:14px;
+		border-right:1px solid #e6e6e6;
+		position:relative;
+		cursor:pointer;
+		&.current{
+			background:#ebebeb;
+			color:#f60;
+			.cor{
+				position:absolute;
+				width:12px;
+				height:6px;
+				left:51px;
+				bottom:-6px;
+				background:url('http://www.9game.cn/public/images/pc/pc_new/conner.jpg') no-repeat 0 0;
+			}
+		}
+		&.last{
+			
+			border-right:1px solid #ebebeb;
+		}
+	}
+}

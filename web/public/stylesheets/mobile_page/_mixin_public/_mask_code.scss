@@ -1,0 +1,48 @@
+
+/**
+* 弹框二维码
+*/
+.mask-code {
+  width:160px;
+  height: 160px;
+  padding:10px;
+  display: none;
+  position: absolute;
+  bottom:37px;
+  right:-76px;
+  background: #f3f3f3;
+  border:1px solid #dadada;
+  @include boxShadow(1px, 1px, 3px, rgba(#000,.1));
+  @include borderRadius(2px);
+  z-index: 16;
+  .cls {
+    width:0px;
+    height:0px;
+    display: block;
+    position: absolute;
+    bottom:-20px;
+    left:80px;
+    border:10px solid transparent;
+    border-top-color:#f3f3f3;
+    z-index:2;
+  }
+  .cls-gray {
+    width:0px;
+    height:0px;
+    display: block;
+    position: absolute;
+    bottom: -24px;
+    left: 78px;
+    border:12px solid transparent;
+    border-top-color:#dadada;
+    z-index:1;
+  }
+  .rcode {
+    width:160px;
+    height: 160px;
+  }
+  .img {
+    width:160px;
+    height: 160px;
+  }
+}

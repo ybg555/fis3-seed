@@ -1,0 +1,22 @@
+﻿@import "../mixin.scss";
+/* 资讯攻略 */
+.tag-tit-6 .tag-tit-ul2,.tag-tit-7 .tag-tit-ul2{
+	width:100%;
+	li{
+		width:121px;
+		.name{
+			font-size: 16px;
+			display:block;
+			border-right:0;
+		}
+		&.last{
+			@include icobg2(102px,-394px);
+		}
+	}
+}
+.tag-tit-7 .tag-tit-ul2 li{
+	width:104px;
+	&.last{
+		background-position:89px -394px;
+	}
+}

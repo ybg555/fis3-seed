@@ -1,0 +1,471 @@
+/**
+* IOS 详情页_3
+*/
+@import "./mixin.scss";
+
+@import "./_mixin_public/_mixin_public"; // 共用元素集合
+
+@import "./_mixin_public/_mask_code"; // 弹框二维码
+@import "./_iphone/_gift_list"; // 礼包列表
+
+* {
+  font-style: normal;
+  transition: color 200ms,background-color 200ms,border-color 200ms;
+  -moz-transition: color 200ms,background-color 200ms,border-color 200ms;
+  -webkit-transition: color 200ms,background-color 200ms,border-color 200ms;
+  -o-transition: color 200ms,background-color 200ms,border-color 200ms;
+}
+.page-break {
+  width:990px;
+  margin:0 auto 10px;
+}
+body {
+  background:#f4f4f4;
+}
+.main-con{
+  padding: 10px 0 0 ;
+  margin-bottom: 10px;
+}
+
+.ban-top {
+  width:990px;
+  height:200px;
+  margin:10px auto;
+  display: table;
+  a {
+    display: block;
+  }
+  .img {
+    width:100%;
+    height: 200px;
+  }
+  .wap-table {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  .label {
+    margin-left:285px;
+    display: inline-block;
+    font-size:30px;
+    color:#fff;
+    font-weight: 700;
+  }
+  .prm {
+    margin-left: 18px;
+    display: inline-block;
+    font-size:24px;
+    color:#fff;
+  }
+  .down-btn {
+    width:145px;
+    height:46px;
+    margin-left:50px;
+    cursor: pointer;
+    display: inline-block;
+    border:1px solid #fff;
+    @include borderRadius(5px);
+    line-height: 46px;
+    text-align: center;
+    font-size:18px;
+    color:#fff;
+  }
+}
+
+.pop-col {
+  @extend %cf;
+  .pop-sub {
+    width:665px;
+    position: relative;
+    float:left;
+  }
+  .sub-main {
+    width:278px;
+    float:left;
+  }
+
+}
+
+.pop-sub {
+  max-height: 351px;
+  margin-bottom: 27px;
+  overflow: hidden;
+  &.horizontal {
+    padding:4px 0 0 0px;
+    margin-bottom: 15px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .prev, .next {
+    width: 28px;
+    height: 100px;
+    display: block;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: url(http://portal.ucgc.ucfly.com/public/images/pc/template5/pic_ctrl.png) no-repeat;
+    cursor: pointer;
+  }
+  .prev {
+    left: 0;
+    background-position: 6px 40px;
+    &.no {
+      background-position: -156px 40px;
+      cursor: default;
+    }
+  }
+  .next {
+    right: 0;
+    background-position: -37px 40px;
+    &.no {
+      background-position: -194px 40px;
+      cursor: default;
+    }
+  }
+  .spec-pic {
+    width: 610px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+  .special-img {
+    width: 590px;
+    height: 297px;
+    margin: 0 auto;
+    position: relative;
+    font-size: 0;
+    zoom: 1;
+    overflow: hidden;
+  }
+  .img {
+    width: 195px;
+    height: 295px;
+    float: left;
+    cursor: pointer;
+    display: inline-block;
+    border: 1px solid #fff;
+    position: relative;
+
+  }
+}
+
+
+.pop-sub.vertical {
+  padding:14px 0 0 0px;
+  .special-img {
+
+  }
+  .img {
+
+
+    margin-right: 8px;
+    _margin-right: 5px;
+    &:hover {
+      border-color:#f80;
+    }
+  }
+}
+.pop-sub.horizontal {
+  .special-img {
+    height: 320px;
+  }
+  .img {
+    width:610px;
+    height: 320px;
+    margin-right: 0;
+  }
+  img {
+    width:480px;
+    margin:0 auto;
+  }
+}
+
+.ol-list-con {
+  width:990px;
+  margin:0 auto;
+}
+
+.sub-bar {
+  width:720px;
+  background: #fff;
+  float:left;
+}
+
+.col-bar {
+  width:260px;
+  background:#fff;
+  float:right;
+}
+.sub-main {
+  margin-left:17px;
+}
+.down-col {
+  width:278px;
+  .tp {
+    display:table;
+    height:60px;
+    @extend %cf;
+    margin:14px 0 18px 0px;
+  }
+  .infos {
+    width:215x;
+    display:table-cell;
+    vertical-align:middle;
+  }
+  .img-clip {
+    width:60px;
+    height: 60px;
+    margin-right: 10px;
+    position: relative;
+    float:left;
+  }
+
+  img {
+    width:60px;
+    height:60px;
+  }
+  .name {
+    max-height: 48px;
+    line-height:24px;
+    font-size:20px;
+    font-weight: 700;
+    color:#333;
+    @include omit(2);
+  }
+  .label {
+    margin-top:3px;
+    display: block;
+    color:#999;
+    font-size:14px;
+  }
+  .btn-code {
+    width:278px;
+    height:58px;
+    position: relative;
+    line-height: 58px;
+    color:#fff;
+    font-size:20px;
+    @include borderRadius(5px);
+    background: #ff8a00;
+    text-align: center;
+    cursor: pointer;
+    &:hover {
+      background:#f60;
+      .mask-code {
+        display: block;
+      }
+    }
+  }
+  .code {
+    width:65px;
+    height: 58px;
+    float:right;
+    display: block;
+    border-left:1px solid rgba(#fff,.3);
+  }
+  .code-ico {
+    width:33px;
+    height:33px;
+    margin-top:13px;
+    margin-left:17px;
+    display: block;
+    background: url(#{$imgUrl}sc.png) no-repeat -72px -83px;
+  }
+  .past {
+    width:278px;
+    height:58px;
+    line-height: 58px;
+    color:#a6a6a6;
+    font-size:20px;
+    @include borderRadius(5px);
+    background: #f3f3f3;
+    text-align: center;
+  }
+  .des {
+    margin-bottom: 28px;
+    max-height: 120px;
+    color:#666;
+    font-size:14px;
+    line-height: 24px;
+  }
+  .org {
+    color:#f80;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+      .tips-des {
+        display: block;
+      }
+    }
+  }
+
+}
+
+.col-sub {
+  margin-bottom: 15px;
+  .box-title {
+    height: 48px;
+    .title {
+      line-height: 48px;
+    }
+  }
+  .list {
+  }
+  .items {
+    margin-top:-1px;
+    padding:7px 8px 5px;
+    display: block;
+    border-top:1px solid #e9e9e9;
+    cursor: pointer;
+    &:hover {
+      background:#FAFAFA;
+      .name {
+        color:#f60;
+      }
+    }
+  }
+}
+
+
+.mask-code {
+  bottom:55px;
+  right:-59px;
+}
+
+.tab-title {
+  height: 48px;
+  border-bottom:2px solid #e9e9e9 ;
+  text-align: center;
+  .items,.link {
+    width:108px;
+    margin-left:75px;
+    display: inline-block;
+    line-height: 48px;
+    text-align: center;
+    font-size:22px;
+    color:#444;
+    cursor: pointer;
+    &.on {
+      color:#f80;
+      border-bottom:2px solid #f80;
+    }
+    &:hover {
+      color:#f80;
+    }
+  }
+}
+
+.new-main {
+  a {
+    height: 160px;
+    display: block;
+    border-bottom:1px dotted #ebebeb;
+  }
+  .list {
+
+  }
+  .items {
+    padding:0 15px;
+    height: 160px;
+    margin-top: -1px;
+    &:hover {
+      background: #fafafa;
+      .name {
+        color:#f80;
+        text-decoration: underline;
+      }
+    }
+  }
+  .name {
+    height: 25px;
+    padding-top: 22px;
+    line-height: 25px;
+    font-size:18px;
+    color:#333;
+    font-weight: 700;
+    @extend %omit1;
+  }
+  .des {
+    height: 48px;
+    margin-top: 10px;
+    line-height: 24px;
+    @include omit(2);
+    color:#666;
+    font-size: 14px;
+  }
+  .time {
+    display: block;
+    margin-top: 13px;
+    color:#999;
+    font-size:12px;
+  }
+  .more-news {
+    height: 60px;
+    font-size:16px;
+    color:#f80;
+    text-align: center;
+    border:none;
+    line-height: 60px;
+  }
+}
+
+.code-bar {
+  padding:20px 0 35px;
+  text-align: center;
+  .img {
+    width:137px;
+    height:137px;
+    margin:0 auto;
+  }
+  .name,.prm {
+    font-size:16px;
+
+    color:#333;
+  }
+  .prm {
+    margin-top:8px;
+  }
+  .name {
+    margin-top:12px;
+    color:#f80;
+    font-weight: 700;
+  }
+}
+.col-sub .items {
+  margin-top:0;
+  border-top:0;
+  border-bottom:1px solid #e9e9e9;
+}
+
+.tips-des {
+  width: 220px;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -182px;
+  background: #fff;
+  padding: 5px 10px;
+  color: #666;
+  z-index: 999;
+  border: 1px solid #d0d0d0;
+  border-radius: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  line-height: 22px;
+  text-align: left;
+  text-indent: 2em;
+  cursor: default;
+  display: none
+}
+
+.tips-des .cor {
+  position: absolute;
+  width: 20px;
+  height: 30px;
+  left: 170px;
+  top: -30px;
+  background: url(http://portal.ucgc.ucfly.com/public/images/pc/template5/code_corner.png) no-repeat center bottom
+}

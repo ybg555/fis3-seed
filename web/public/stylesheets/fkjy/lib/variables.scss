@@ -1,0 +1,83 @@
+@charset "UTF-8"; 
+
+/* 
+@description: 基本属性设置 -- 九游PC标准官网
+@author: wuwl@ucweb.com ### 20140915
+@update:
+*/
+
+// backup
+// -------------------------
+$backgroundColor :#1A0A14;
+
+$mainColor : #630;
+$hoverColor: #900;
+
+$subColor : #663306;
+$subHoverColor : #993305;
+
+$markColor : #ad9681;
+
+$boxColor : #fef9ea;
+
+$boxBorderColor: #c68a09;
+
+$borderColor : #e1d6bb;
+
+$titleColor : #c00;
+
+$thBgColor : #ffeeba;
+$tdBgColor : #fff9eb;
+
+
+// Base Color
+// -------------------------
+$grayDark:              #333;
+$gray:                  #666;
+$grayLight:             #999;
+$grayLighter:           #ccc;
+$ungray:                #e9e9e9;
+$white:                 #FFF;
+
+$org:                		#F80;
+$orgLight:              #ff794c;
+$red:                   #ff4000;
+$rose:                  #f69;
+$yellow:                #ffb300;
+$green:                 #6bb247;
+$greenLight:            #1dbf6e;
+$bluegreen:             #26bfbf;
+$blue:                  #5cace5;
+$darkblue:              #176de5;
+$purple:                #8289d9;
+
+$tra:                   transparent;
+
+// Project Properties
+// -------------------------
+$textColor:             $gray;
+$emColor:               $grayDark;
+$weakenColor:           $grayLight;
+$weakenerColor:         $grayLighter;
+$keyColor:           		$org;
+$moreColor:           	$darkblue;
+$borderColor:      			$ungray;
+
+$borderRadius:          2px;
+
+// Typography
+// -------------------------
+$smSize:              	12px;
+$textSize:              14px;
+$emSize:              	16px;
+$titleSize:             18px;
+$headerSize:            20px;
+
+$basefontFamily:      "Droid Sans Fallback" "Rounded MT Bold",tahoma, Arial, "\5B8B\4F53", sans-serif;
+
+// url
+// -------------------------
+$imgUrl:              'http://img.9game.cn/public/images/android_portal';
+//$imgUrl:              '../images';
+
+

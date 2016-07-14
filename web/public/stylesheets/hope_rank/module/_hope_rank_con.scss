@@ -1,0 +1,222 @@
+﻿@import "../mixin.scss";  
+.hope-rank-con{
+	.server-more {
+		position: absolute;
+		right: 0;
+		top: 3px; 
+		display: block;
+		padding-right:25px;
+		height: 26px;
+		background: url(http://www.9game.cn/public/images/pc/pc_new/lit_icon.png) no-repeat right -248px;
+		_background: url(http://www.9game.cn/public/images/pc/pc_new/lit_icon.gif) no-repeat right -248px;
+		background-color: #ff8a00;
+		-moz-border-radius: 4px;
+		-khtml-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		border-radius: 4px;
+		line-height: 25px;
+		color: #fff;
+		text-indent: 5px;
+		font-size: 14px;
+	}
+	table{
+		width:100%;
+		text-align:center;
+		th{
+			background-color:#fdfdfd;
+			height:32px;
+			line-height:32px;
+			border-bottom:1px solid #f5f5f5;
+			cursor:default;
+			color:#666;
+			&.num{
+				width:100px;
+			}
+			&.time{
+				width:195px;
+			}
+			&.static{
+				width:105px;
+			}
+			&.downtr{
+				width:135px;
+			}
+			&.type{
+				width:145px;
+			}
+			&.hottr{
+				width:170px;
+			}
+		}
+		tr{
+			width:100%;
+			border-bottom:1px dotted #ebebeb;
+			&:hover{
+				background:#f7f7f7 !important;
+			}
+			&.last{
+				border:0;
+			}
+			&.spec{
+				background:#fff8f0;
+			}
+		}
+		td{
+			height:39px;
+			
+			font-size:14px;
+			&.time1{
+				color:#666;
+				cursor:default;
+				.d{
+					color:#666;
+					line-height:20px;
+					font-size:14px;
+				}
+				.t{
+					color:#666;
+					line-height:16px;
+					font-size:12px;
+				}
+			}
+			&.time2{
+				cursor:default;
+				color:#666;
+				font-size:12px;
+			}
+			&.static{
+				color:#666;
+				cursor:default;
+				.p2{
+					display:block;
+					line-height:16px;
+					font-size:12px;
+				}
+			}
+			&.type{
+				color:#666;
+				cursor:default;
+			}
+		}
+		.num{
+			color:#999;
+			cursor:default;
+			.n{
+				
+				height:17px;
+				display:inline-block;
+				background:#ccc;
+				line-height:17px;
+				text-align:center;
+				padding:0 5px;
+				color:#fff;
+				font-size:12px;
+			}
+			&.num1 .n{
+				background:#f60;
+			}
+			&.num2 .n{
+				background:#ff9000;
+			}
+			&.num3 .n{
+				background:#ffc000;
+			}
+		}
+		.hot{
+			cursor:default;
+			color:#666;
+			.up{
+				padding-right:14px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat right 4px;
+			}
+			.mid{
+				padding-right:14px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat right -35px;
+			}
+			.low{
+				padding-right:14px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat right -69px;
+			}
+		}
+		.btn{
+			display:block;
+			margin:1px auto;
+			width:24px;
+			height:24px;
+			@include bor-radius;
+			@include icobg;
+			background-color:#f2f2f2;
+			overflow:hidden;
+		}
+		a.name{
+			text-align:center;
+			display:inline-block;
+			max-width:195px;
+			_width:200px;
+			@include hidden;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+		a.act{
+			width:40px;
+			height:20px;
+			display:inline-block;
+			overflow:hidden;
+			margin-left:5px;
+			text-indent:-555px;
+			background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_icon.png) no-repeat 0 -120px;
+		}
+		.home{
+			background-position:-127px 2px;
+			&:hover{
+				background-position:-89px 2px;
+				background-color:#ff8a00;
+			}
+			
+		}
+		.down{
+			width:76px;
+			color:#333;
+			line-height:23px;
+			font-size:12px;
+			text-align:left;
+			text-indent:22px;
+			background:#f2f2f2 url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat 7px -148px;
+			&:hover{
+				color:#fff;
+				background-position:7px -106px;
+				background-color:#a3ce0e;
+				transition: all 200ms;
+				-moz-transition:all 200ms;
+				-webkit-transition: all 200ms;
+				-o-transition:all 200ms;
+			}
+		}
+		.down.no{
+			background-position:7px -193px;
+			background-color:#f2f2f2;
+			cursor:default;
+			&:hover{
+				background-position:7px -193px;
+				background-color:#f2f2f2;
+			}
+		}
+		.gift{
+			@include icobg2(3px,-52px);
+			background-color:#f2f2f2;
+			&:hover{
+				background-position:3px -25px;
+				background-color:#ff622b;
+			}
+		}
+		.gift.no{
+			background-position:3px -74px;
+			cursor:default;
+			&:hover{
+				background-position:3px -74px;
+				background-color:#f2f2f2;
+			}
+		}
+	}
+}

@@ -1,0 +1,117 @@
+﻿@import "../mixin.scss";  
+/* 分页 */
+.page-change{
+	width:698px;
+	height:28px;
+	position:absolute;
+	bottom:0;
+	left:15px;
+	padding:28px 0;
+	text-align:center;
+	.change{ 
+		width:78px;
+		height:28px;
+		display:inline-block;
+		border:1px solid #ccc;
+		line-height:28px;
+		font-size:14px;
+		@include btnbg;
+		
+	}
+	a.change{
+		&:hover{
+			color:#fff;
+			background:#ff8a00;
+			border-color:#ff8a00;
+			
+		}
+	}
+	span.change{
+		background:#f5f5f5;
+		color:#999;
+		border-color:#f5f5f5;
+		cursor:default;
+	}
+	.now{
+		
+		height:28px;
+		display:inline-block;
+		margin:0 5px;
+		padding:0 20px 0 10px;
+		line-height:28px;
+		cursor:pointer;
+		position:relative;
+		&.current,&:hover{
+			color:#336fc1;
+		}
+		&.current i,&:hover i{
+			background-position:-90px -254px;
+		}
+		i{
+			width: 10px;
+			height: 10px;
+			display:block;
+			position:absolute;
+			right:4px;
+			top:8px;
+			@include icobg;
+			background-position:-191px -252px;
+		}
+	}
+	.page-change-list{
+		width:80px;
+		padding:10px 6px;
+		border:1px solid #dbdbdb;
+		background:#fff;
+		margin-left:50%;
+		position:absolute;
+		left:-47px;
+		bottom:58px;
+		display:none;
+		li{
+			height:22px;
+		}
+		a,span{
+			line-height:22px;
+			display:block;
+		}
+		a:hover{
+			background:#ff8a00;
+			color:#fff;
+		}
+		span{
+			background:#f5f5f5;
+			color:#666;
+			cursor:default;
+		}
+	}
+}
+
+/* 页面加载 */
+.page-load,.page-unload{
+	text-align:center;
+	height: 28px;
+	line-height: 28px;
+	padding-bottom: 20px;
+	img{
+		margin-right:10px;
+		vertical-align: middle;
+	}
+	a.page-reload{
+		margin:0 4px;
+		color:#f60;
+		&:hover{
+			text-decoration:underline;
+		}
+		&.more{
+			color:#333;
+			&:hover{
+				color:#f60;
+				text-decoration:underline;
+			}
+		}
+	}
+}
+.page-unload{
+	display:none;
+}

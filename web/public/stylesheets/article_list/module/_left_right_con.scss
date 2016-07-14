@@ -1,0 +1,27 @@
+﻿/* 资讯列表 左右容器*/
+.info-con-730{
+	width:728px;
+	border:1px solid #ebebeb;
+	margin-bottom: 15px;
+	float:left;
+	padding-bottom:70px;
+	position:relative;
+	min-height:1353px;
+	& .box-text{
+	padding:0 15px;
+	}
+}
+.info-con-250{
+	float:right;
+	width:248px;
+	border:1px solid #fff;
+}
+.ol-list-con .game-ul-list {
+	padding: 0 4px;
+	_padding: 0 3px;
+	margin-bottom:35px;
+	border-bottom: 1px solid #ebebeb;
+	li {
+		margin: 5px;
+	}
+}

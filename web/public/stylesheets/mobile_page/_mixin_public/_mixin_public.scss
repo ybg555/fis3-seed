@@ -1,0 +1,86 @@
+@charset "utf-8";
+/**
+* @author: lanhong.llh@alibaba-inc.com
+* @description: ios频道共用元素集合
+*/
+
+%cf {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin hidden{
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+%center {
+  display:-webkit-box;
+  -webkit-box-pack:center;
+  -webkit-box-align:center;
+}
+%omit {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+@mixin omit ($omitNum : 1) {
+  @extend %omit;
+  -webkit-line-clamp: $omitNum;
+}
+%omit1 {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+@mixin borderRadius ($radius) {
+  -moz-border-radius: $radius;
+  -khtml-border-radius: $radius;
+  -webkit-border-radius: $radius;
+  border-radius: $radius;
+}
+
+
+@mixin linearGadient ($color) {
+  background: $color;
+  background: -moz-linear-gradient(top, #fff, $color);
+  background: -webkit-linear-gradient(top, #fff, $color);
+  background: -ms-linear-gradient(top, #fff,$color);
+  background: -o-linear-gradient(top, #fff, $color);
+}
+
+@mixin boxShadow ($x, $y, $shadowSize, $col) {
+  -moz-box-shadow: $x $y $shadowSize $col;
+  -webkit-box-shadow: $x $y $shadowSize $col;
+  -ms-box-shadow: $x $y $shadowSize $col;
+  -o-box-shadow: $x $y $shadowSize $col;
+  box-shadow: $x $y $shadowSize $col;
+}
+
+%imgTransition {
+  transition: all 500ms;
+  -webkit-transition: all 500ms;
+  -moz-transition: all 500ms;
+  -o-transition: all 500ms;
+}
+
+
+
+// dev
+//$imgUrl: '../../images/' ;
+
+// 线上
+$imgUrl: 'http://image.uc.cn/s/uae/g/1m/ngp_portal/pc/';
+
+// 图片托管旧平台
+$imgOldUrl: 'http://www.9game.cn/public/images/pc/';

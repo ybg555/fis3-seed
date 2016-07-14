@@ -1,0 +1,16 @@
+﻿/* 右侧--游戏截图 */	
+.game-pic-con{position:relative;width:630px;margin:0 auto 20px auto;}
+	.game-pic-con .pic-con{width:480px;height:320px;position:relative;margin:0 auto;overflow:hidden;}
+	.game-pic-con .game-pic{width:1000%;height:100%;position:relative;}
+		.game-pic-con .game-pic li{width:480px;height:100%;float:left;text-align:center;}
+		.game-pic-con .game-pic li img{height:100%;cursor:pointer;}
+	.game-pic-con .pic-ctrl{width:480px;height:8px;text-align:center;margin:0 auto;font-size:0;}
+		.game-pic-con .pic-ctrl a{width:25%;*width:24.5%;height:5px;margin-right:2px;display:inline-block;border-bottom:3px solid #e6e6e6;}
+			.game-pic-con .pic-ctrl a.on,.game-pic-con .pic-ctrl a:hover{border-color:#f60;}
+	.game-pic-con .btn{width:50px;height:100px;display:block;position:absolute;background:url('http://www.9game.cn/public/images/pc/pc_new/pic_btn.png') no-repeat 100px 100px;_background:url('http://www.9game.cn/public/images/pc/pc_new/pic_btn.gif') no-repeat 100px 100px;cursor:pointer;}
+		.game-pic-con .btn.pic-prev{left:0;top:100px;background-position:-325px 15px;}
+		.game-pic-con .btn.pic-next{right:0;top:100px;background-position:-404px 15px;}
+			.game-pic-con .pic-prev.no{background-position:0 15px;}
+			.game-pic-con .pic-next.no{background-position:-87px 15px;}
+			.game-pic-con .pic-prev.current{background-position:-169px 15px;}
+			.game-pic-con .pic-next.current{background-position:-253px 15px;}

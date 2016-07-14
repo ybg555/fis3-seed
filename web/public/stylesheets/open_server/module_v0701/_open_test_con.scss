@@ -1,0 +1,238 @@
+﻿@import "../mixin.scss";
+.open-test-con{
+	margin-bottom:25px;
+	table{
+		width: 100%;
+	}
+	table th{
+		height: 32px;
+		color: #666;
+		border-bottom: 1px solid #f5f5f5;
+		background: #fdfdfd;
+		text-align: center;
+		font-size:14px;
+	}
+	.timetr{
+		width:100px;
+	}
+	.nametr{
+		width:auto;
+	}
+	.stattr{
+		width:120px;
+	}
+	.typetr{
+		width:96px;
+	}
+	.btntr{
+		width:100px;
+	}
+	.des-table{
+		padding-left:4px;
+		border-left:1px solid #f5f5f5;
+		background:#fdfdfd;
+		.day{
+			height:30px;
+			line-height:30px;
+			text-indent:38px;
+			cursor:default;
+			margin-left:-13px;
+			
+		}
+		
+		tr{
+			border-top:1px dotted #ebebeb;
+			border-bottom:none;
+		}
+		
+	}
+	.radius32{
+		width: 32px;
+		height: 32px;
+		background: url("http://www.9game.cn/public/images/pc/pc_new/img_radius.png") no-repeat 0 -150px;
+		_background: url("http://www.9game.cn/public/images/pc/pc_new/img_radius.gif") no-repeat 0 -150px;
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	.des-table1{
+		border-left:1px solid #f7f7f7;
+		background:#fff;
+		border-bottom:1px dotted #ebebeb;
+		.day{
+			color:#fff;
+			background:url(http://www.9game.cn/public/images/pc/pc_new/open_server_day.png) no-repeat 0 3px;
+		}
+		
+	}
+	.des-table2{
+		border-left:1px solid #f7f7f7;
+		background:#fff;
+		border-bottom:1px dotted #ebebeb;
+		.day{
+			color:#666;
+			background:url(http://www.9game.cn/public/images/pc/pc_new/open_server_day.png) no-repeat 0 -47px;
+		}
+		
+	}
+	.img{
+		width:32px;
+		height:32px;
+		display:block;
+		float:left;
+		margin:9px 10px 0 0;
+		position:relative;
+		img{
+			width:32px;
+			height:32px;
+			display:block;
+		}
+	}
+	table{
+		tr{
+			border-bottom:1px solid #ebebeb;
+		}
+		tr:hover{
+			background:#f7f7f7;
+		}
+		td{
+			font-size:14px;
+			height: 49px;
+			text-align: center;
+			color: #666;
+		}
+		.time{
+				color: #666;
+				display:block;
+				text-indent:-10px;
+		}
+		.name{
+			width:184px;
+			display:inline-block;
+			line-height:49px;
+			float:left;
+			margin-right:5px;
+		}
+		.hot{
+			cursor:default;
+			.up{
+				padding-right:14px;
+				margin-right:4px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat right 4px;
+			}
+			.mid{
+				margin-right:4px;
+				padding-right:14px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat right -35px;
+			}
+			.low{
+				margin-right:4px;
+				padding-right:14px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat right -69px;
+			}
+		}
+		.android{
+			display: inline-block;
+			width: 14px;
+			height: 12px;
+			@include icobg;
+			margin-left:3px;
+			background-position: -111px -320px;
+			float:left;
+			margin-top:19px;
+		}
+		.ios{
+			display: inline-block;
+			width: 14px;
+			height: 12px;
+			@include icobg;
+			margin-left:3px;
+			background-position:-138px -320px;
+			float:left;
+			margin-top:19px;
+		}
+		td a{
+			width: 196px;
+			display: block;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			&:hover{
+				text-decoration: underline;
+			}
+		}
+		.sbtn{
+			display:inline-block;
+			width:76px;
+			height:23px;
+			margin-top: 3px;
+			line-height: 24px;
+			text-indent: 18px;
+			font-size: 12px;
+			color: #666;
+			text-decoration: none;
+			@include bor-radius;
+			@include icobg2;
+			background-color:#f2f2f2;
+			&:hover{
+				text-decoration:none;
+			}
+		}
+		.icon-gift{
+			background-position:4px -52px;
+		}
+		.icon-gift:hover{
+			background-position:4px -25px;
+			background-color: #ff622b;
+			color: #fff;
+		}
+		.icon-gift-no{
+			background-position:3px -75px;
+			text-indent: 12px;
+			cursor:default;
+		}
+		.icon-down{
+			background:#f2f2f2 url(http://www.9game.cn/public/images/pc/pc_new/newgame_rank.png) no-repeat 6px -149px;
+			text-indent: 12px;
+		}
+		.icon-down:hover{
+			background-position: 6px -107px;
+			transition: all 200ms;
+			-moz-transition: all 200ms;
+			-webkit-transition: all 200ms;
+			-o-transition: all 200ms;
+			background-color: #a3ce0e;
+			color: #fff;
+		}
+		.icon-down-no{
+			background-position:2px -97px;
+			text-indent: 12px;
+			cursor:default;
+		}
+		.icon-home{
+			background-position:4px -433px;
+			text-indent: 12px;
+		}
+		.icon-home:hover{
+			background-position:4px -461px;
+			background-color: #ff8a00;
+			color: #fff;
+		}
+		.icon-home-no{
+			background-position:4px -488px;
+			text-indent: 12px;
+			cursor:default;
+		}
+		.icon-qq{
+			background-position:6px -277px;
+		}
+		.icon-qq:hover{
+			background-position:6px -307px;
+			background-color: #50c0ff;
+			color: #fff;
+			cursor:pointer;
+		}
+
+		
+	}
+}

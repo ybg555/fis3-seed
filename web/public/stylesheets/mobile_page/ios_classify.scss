@@ -1,0 +1,36 @@
+﻿/**
+* IOS 分类页
+*/
+@import "./mixin.scss";
+@import "./_mixin_public/_mixin_public"; // 共用元素集合
+
+@import "./classify/_game_classify.scss";   			/* 游戏分类 */
+@import "./classify/_game_poker_con.scss";   			/* 游戏卡片列表 */
+@import "./classify/_page_change.scss";   			/* 分页 */
+
+
+@import "./_mixin_public/_mask_code"; // 弹框二维码
+
+.down {
+  position: relative;
+  &:hover {
+    .mask-code {
+      display: block;
+    }
+  }
+}
+.game-poker li a.info img {
+  width: 90px;
+  height: 90px;
+}
+.mask-code {
+  right: -47px;
+}
+.classify h2 {
+  font-size:14px;
+  color:#333;
+  font-weight: inherit;
+}
+.classify .current h2 {
+  color:#fff;
+}

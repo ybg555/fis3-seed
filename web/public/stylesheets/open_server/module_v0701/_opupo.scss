@@ -1,0 +1,19 @@
+﻿@import "../mixin.scss";
+/* 今日开服 */
+.client-guide{
+	.word{
+		color:#333;
+		font-size:16px;
+		text-align:center;
+		line-height:20px;
+		margin:5px 0;
+	}
+	.org{
+		color:#f60;
+	}
+	.img{
+		width:180px;
+		display:block;
+		margin:15px auto;
+	}
+}

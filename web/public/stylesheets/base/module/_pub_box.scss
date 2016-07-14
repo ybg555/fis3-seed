@@ -1,0 +1,200 @@
+﻿@import "../mixin.scss";
+
+/* 公用样式 */
+.popup_of{
+	overflow:hidden;
+}
+h1.index{
+	font-size: 12px;
+	color: #fff;
+	position: absolute;
+	text-indent: -99px;
+}
+.main-con{
+	width:990px;
+	padding:10px 5px 0 5px;
+	margin:0 auto;
+	background-color:#fff;
+}
+.main-con.big{
+	padding:10px 10px 0 10px;
+	background:#fff;
+}
+.box,.box-text{
+	zoom:1;
+	&:after{
+		content:'';
+		visibility: hidden;
+		display: block;
+		clear:both;
+	}
+}
+.box.mar-box , .box.android-game{
+	margin-bottom:15px;
+}
+/* 模块大标题 */
+.box-title{
+	height:35px;
+	border-bottom:2px solid #ebebeb;
+	position:relative;
+	.inset-h,h1,h2,h3,p{
+		position:absolute;
+		display:inline-block;
+		padding:0 15px;
+		left:0;
+		top:0;
+		line-height:35px;
+		font-weight:700;
+		border-bottom:2px solid #f60;
+		font-size:20px;
+		cursor:default;
+	}
+	.inset-h h1{
+		position:static;
+		color:#666;
+		display:inline-block;
+		left:0;
+		top:0;
+		line-height:35px;
+		font-size:18px;
+		cursor:default;
+		font-weight:400;
+		margin-left:5px;
+		border-bottom: 0;
+		padding: 0;
+	}
+	h2,h3,p{
+		display:inline-block;
+		_zoom:1;
+		*display:inline;
+	}
+	.more{
+		float:right;
+		margin:8px 10px 0 0;
+		font-size:14px;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+	.double-more{
+		position:absolute;
+		right:0;
+		top:10px;
+		a{
+			color:#333;
+			display:inline-block;
+			font-size:14px;
+			height:14px;
+			line-height:14px;
+			padding:0 10px;
+			border-right:1px solid #ebebeb;
+			border-bottom:0;
+			&.last{
+				border-right:0;
+			}
+			&:hover{
+				color:#f60;
+			}
+		}
+	}
+	
+}
+/* 模块大标题--tab切换 */
+.tag-tit{
+	height:35px;
+	border-bottom:2px solid #ebebeb;
+	background-color:#f5f5f5;
+	.tag-tit-ul,.tag-tit-ul2{
+		width:70%;
+		height:100%;
+		float:left;
+		li{
+			height:100%;
+			float:left;
+			padding:0 15px;
+			font-size:16px;
+			font-weight:700;
+			line-height:35px;
+			cursor:pointer;
+			&.current{
+				color:#f60;
+				border-bottom:2px solid #f60;
+				a{
+					color:#f60;
+				}
+			}
+			&:hover{
+				color:#f60;
+				a{
+					color:#f60;
+				}
+			}
+			
+		}
+	}
+	.more{
+		float:right;
+		margin:8px 10px 0 0;
+		font-size:14px;
+		&:hover{
+			text-decoration:underline;
+		}
+		a{
+			display:none;
+			&.current{
+				display:block;
+			}
+		}
+		
+	}
+}
+.tag-tit .tag-tit-ul2{
+	li{
+		text-align:center;
+		line-height:16px;
+		padding:0;
+		.name{
+			padding:0 15px;
+			display:inline-block;
+			height:16px;
+			border-right:1px solid #d9d9d9;
+			margin-top:10px;
+		}
+		&.last{
+			.name{
+				border-right:0;
+			}
+		}
+	}
+}
+/* 模块小标题 */
+.little-tit{
+	position:relative;
+	height:30px;
+	h1,h2,h3,p{
+		position:relative;
+		display:inline-block;
+		padding:0 6px;
+		left:15px;
+		top:10px;
+		font-size:16px;
+		line-height:16px;
+		border-left:2px solid #f60;
+		cursor:default;
+	}
+	h1,h2,h3{
+		display:inline-block;
+		_zoom:1;
+		*display:inline;
+	}
+	.more{
+		position:absolute;
+		right:10px;
+		top:6px;
+		font-size:14px;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+}
+

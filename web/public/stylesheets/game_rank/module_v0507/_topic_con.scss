@@ -1,0 +1,19 @@
+﻿.topic-con{
+  padding: 0 0 10px 10px;
+  
+  & a{
+	float: left;
+	display:block;
+	border: 1px solid #fff;
+	width:235px;
+	height:176px;
+	overflow:hidden;
+	margin: 0 6px 0 0;
+	&:hover{
+  		border: 1px solid #ff6600
+  	}
+	img{
+		width:100%;
+	}
+  }
+ }

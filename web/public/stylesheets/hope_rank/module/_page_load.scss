@@ -1,0 +1,11 @@
+﻿.page-load, .page-unload {
+	padding:15px 0;
+	text-align: center;
+	height: 28px;
+	line-height: 28px;
+	padding-bottom: 20px;
+}
+.page-load a.page-reload, .page-unload a.page-reload {
+margin: 0 4px;
+color: #f60;
+}

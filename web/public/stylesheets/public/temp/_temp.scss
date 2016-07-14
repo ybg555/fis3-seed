@@ -1,0 +1,69 @@
+﻿/* 90x90 临时样式 */
+.width90 li a.info{
+	& img{
+		width:90px;
+		height:90px;
+	}
+	& .radius90{
+		left:43px;
+	}
+} 
+.width90 li .game-ico{
+	width:90px;
+	height:90px;
+	margin-top:9px;
+	& img {
+		display: block;
+		width: 90px;
+		height: 90px;
+	}
+}
+.icon-android, .icon-iphone{
+	display:inline-block;
+	width: 19px;
+	height: 19px;
+	@include icobg;
+	background-position:-160px -315px;
+}
+.icon-iphone{
+	background-position:-179px -315px
+}
+
+/* 搜索弹窗提示 */
+#search_popup{
+	.opaBg{
+		_background:none;
+		filter:none;
+	}
+}
+.sr-popup{
+	width:730px;
+	height:190px;
+	position:absolute;
+	left:50%;
+	top: 16px;
+	margin-left: -228px;
+	.sr-tips-btn{
+		width:258px;
+		height:190px;
+		float:left;
+		position:relative;
+		background:url('http://www.9game.cn/public/images/pc/pc_new/search_tips.png') no-repeat center center;
+	}
+	.sr-tips-text{
+		width:450px;
+		height:34px;
+		float:left;
+		margin-left: 6px;
+		margin-top: 33px;
+		background:url('http://www.9game.cn/public/images/pc/pc_new/sr_tips.jpg') no-repeat center center;
+	}
+	.sr-close{
+		width:120px;
+		height:38px;
+		position:absolute;
+		left: 49px;
+		bottom: 29px;
+		cursor:pointer;
+	}
+}  

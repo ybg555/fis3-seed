@@ -1,0 +1,50 @@
+﻿/* 圆角系列 */
+.radius90{
+	width: 90px;
+	height: 90px;
+	display: block;
+	@include radius;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.radius60{
+	width: 60px;
+	height: 60px;
+	display: block;
+	@include radius;
+	background-position:0 -90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.radius70{
+	width: 70px;
+	height: 70px;
+	display: block;
+	@include radius;
+	background-position:-70px -90px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.radius120{
+	width: 120px;
+	height: 120px;
+	display: block;
+	@include radius;
+	background-position:0 -330px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.radius140{
+	width: 140px;
+	height: 140px;
+	display: block;
+	@include radius;
+	background-position:0 -185px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

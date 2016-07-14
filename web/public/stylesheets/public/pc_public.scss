@@ -1,0 +1,24 @@
+﻿@charset "utf-8";
+*{
+transition: color 300ms,background-color 300ms;
+-moz-transition: color 300ms,background-color 300ms;
+-webkit-transition: color 300ms,background-color 300ms;
+-o-transition: color 300ms,background-color 300ms;
+}
+
+
+@import "./module/_init.scss";   			/* 标签初始化 */
+@import "./module/_pub_header_v20140516.scss";   			/* 头部 */  
+@import "./module/_nav_search.scss"; 		/* 导航 */
+@import "./module/_footer.scss";				/* 底部 */
+@import "./module/_pub_box.scss";			/* 公用标题栏和容器 */
+@import "./module/_page_break.scss";			/* 面包屑 */
+@import "./module/_popup_down.scss";			/* 多包弹窗下载 */
+@import "./module/_news_list.scss";			/* 文字列表 */
+@import "./module/_game_ul_list.scss";		/* 游戏下载列表 */
+@import "./module/_pic_word_con.scss";		/* 图片 */
+@import "./module/_video_word_con.scss";		/* 视频 */
+@import "./module/_littlt_fix_nav.scss";		/* 悬浮小导航 */
+@import "./module/_radius.scss";				/* 圆角 */
+@import "./module/_guide_app.scss";					/* app引流 */ 
+@import "./temp/_temp.scss";					/* 临时样式 */ 

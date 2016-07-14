@@ -1,0 +1,64 @@
+﻿/*网站地图*/
+.sidemap-con{
+	margin:8px 0;
+	border-bottom: 1px solid #f5f5f5;
+}
+.sidemap-list{
+	margin:0 0 0 10px;
+	a{
+		width:104px;
+		font-size:14px;
+		padding-left: 14px;
+		margin: 8px 0;
+		line-height: 14px;
+		height: 14px;
+		border-right: 1px solid #e6e6e6;
+		display: inline-block;
+		@include hidden;
+		&:hover{
+			text-decoration: underline;
+		}
+		&:nth-of-type(8n),&.last{
+			border:0;
+		}
+	}
+}
+.sidemap-tab{
+	height:36px;
+	background:#f5f5f5;
+	border-top:1px solid #ebebeb;
+	margin:10px 0;
+	li{
+		width:97px;
+		height:34px;
+		float:left;
+		line-height:34px;
+		text-align:center;
+		font-size:16px;
+		border:1px solid #f5f5f5;
+		a{
+			display:block;
+			height:34px;
+		}
+		&.current{
+			background:#fff;
+			border-color:#ebebeb;
+			border-top:1px solid #fff;
+			border-bottom:1px solid #fff;
+		}
+	}
+}
+.sidemap-name-con{
+	padding:10px 0;
+	border-bottom:1px dotted #f5f5f5;
+}
+.sidemap-name{
+	font-size:14px;
+	color:#999;
+	text-indent:24px;
+	margin-bottom:5px;
+	.org{
+		font-size:18px;
+		color:#f80;
+	}
+}

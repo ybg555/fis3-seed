@@ -1,0 +1,83 @@
+﻿/* 网游--游戏详情页  简介 */
+.info-con{
+	margin:0 14px;
+	&.current{
+		display:block;
+	}
+	.little-tit{
+		border-bottom:1px solid #f5f5f5;
+		height:36px;
+		h1,h2,h3,p{
+			left:0;
+		}
+		.more{
+			right:0;
+			top:10px;
+		}
+	}
+	.news-list{
+		padding:0;
+		li{
+			line-height:40px;
+			border-bottom:1px dotted #ebebeb;
+			background-position:-196px -279px;
+			.date{
+				margin-right:2px;
+			}
+			&.last{
+				border-bottom:1px solid #ebebeb;
+			}
+		}
+	}
+	.game-text{
+		margin:15px 0;
+		p{
+			font-size:14px;
+			color:#666;
+			text-indent:2em;
+			line-height:24px;
+		}
+	}
+	.game-gift{
+		margin-bottom:15px;
+		.news-list li{
+			background:none;
+			padding-left:0;
+			.remine{
+				margin-top:8px;
+			}
+		}
+	}
+	.game-guys{
+		margin-bottom:15px;
+		.novice-contex {
+			border-bottom:1px solid #f5f5f5;
+			a{
+				width: 95px;
+				_width:90px;
+				color: #333;
+				margin: 10px 0;
+				text-align: center;
+				display: inline-block;
+				border-right: 1px solid #d4d4d4;
+				font-size: 14px;
+				line-height:14px;
+				&:hover{
+					color:#f60;
+					text-decoration:underline;
+				}
+				&.last{
+					border-right:0;
+				}
+			}
+		}
+	}
+	.game-list{
+		margin-bottom:15px;
+	}
+	.game-ul-list{
+		li{
+			margin-right:5px;
+		}
+	}
+}

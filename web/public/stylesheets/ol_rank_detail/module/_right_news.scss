@@ -1,0 +1,21 @@
+﻿/* 右边新闻 */
+.right-news-con{
+	.tag-tit-ul{
+		width:100%;
+		li{
+			width:94px;
+			text-align:center;
+		}
+	}
+	.news-list{
+		padding-left:0;
+		display:none;
+		&.current{
+			display:block;
+		}
+		li a{
+			max-width:99%;
+			_width:99%;
+		}
+	}
+}

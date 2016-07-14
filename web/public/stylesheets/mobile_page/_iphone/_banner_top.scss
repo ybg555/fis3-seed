@@ -1,0 +1,329 @@
+@charset "utf-8";
+
+@import "../_mixin_public/_mixin_public"; // 共用元素集合
+
+
+.banner-mod {
+  @extend %cf;
+  .big-banner {
+    width:600px;
+    float:left;
+  }
+  .col-banner {
+    width:390px;
+    float:left;
+  }
+}
+
+.big-banner {
+  .point-list {
+    position: absolute;
+    bottom:16px;
+    right:16px;
+  }
+  .img-box {
+    position: relative;
+  }
+  a {
+    display: block;
+    position: relative;
+  }
+  .banner-box {
+    position: relative;
+  }
+  .pops-list {
+    width:600px;
+    height: 338px;
+    position: relative;
+  }
+  .items {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+  }
+  .mask-banner {
+    width:600px;
+    height:338px;
+    position: absolute;
+    top:0;
+    left:0;
+    background:url(#{$imgUrl}mask_iphone.png) no-repeat center;
+  }
+  .name {
+    height:28px;
+    position: absolute;
+    bottom:12px;
+    left:16px;
+    line-height: 28px;
+    font-size:18px;
+    color:#fff;
+    @extend %omit1;
+  }
+}
+.point-list {
+  .pt-items {
+    width:8px;
+    height:8px;
+    margin-left:8px;
+    display: inline-block;
+    background: rgba(#fff,.36);
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#36ffffff,endColorstr=#36ffffff);
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    -webkit-border-radius: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    &.on {
+      background:#f80;
+    }
+  }
+}
+.col-banner {
+  margin-top:-10px;
+  .img-box {
+    width:185px;
+    height:106px;
+    position: relative;
+    margin: 10px 0 0 10px;
+    cursor: pointer;
+    float:left;
+    &:hover {
+      .hover {
+        display: block;
+      }
+    }
+  }
+  .name {
+    display: block;
+    margin-top: 49px;
+    margin-left: 10px;
+    font-size:16px;
+    color:#555;
+    font-weight: 700;
+  }
+  .hover {
+    position: absolute;
+    top:0;
+    left:0;
+    width:185px;
+    height:106px;
+    display: none;
+    background: rgba(#000,.2);
+  }
+}
+
+%attrRole {
+  width:185px;
+  height: 106px;
+  background-image:url(#{$imgUrl}cls.png);
+  background-repeat: no-repeat;
+}
+.role-v1 {
+  @extend %attrRole;
+  background-position: 0 0;
+}
+.role-v2 {
+  @extend %attrRole;
+  background-position: -195px 0;
+}
+.role-v3 {
+  @extend %attrRole;
+  background-position: 0px -118px;
+}
+.role-v4 {
+  @extend %attrRole;
+  background-position: -195px -118px;
+}
+.role-v5 {
+  @extend %attrRole;
+  background-position: 0 -234px;
+}
+.role-v6 {
+  @extend %attrRole;
+  background-position: -195px -234px;
+}
+
+
+.down-list {
+  @extend %cf;
+  margin-left:-10px;
+  margin-top:10px;
+  .items {
+    width:211px;
+    height:208px;
+    margin-top: 10px;
+    margin-left:10px;
+    padding:20px 10px;
+    border:1px solid #ebebeb;
+    float:left;
+    cursor: pointer;
+    &:hover {
+      background: #f8f8f8;
+    }
+  }
+  .game-infos {
+    padding-bottom:22px;
+    border-bottom:1px dotted #ebebeb;
+  }
+  .infos {
+    width:100%;
+    margin-top:15px;
+    height: 84px;
+    position: relative;
+    line-height: 28px;
+    @include omit(3);
+    color:#666;
+    font-size:14px;
+    text-align: justify;
+  }
+  .more-infos {
+    //position: absolute;
+    bottom:0;
+    right:0;
+    color:#666;
+    font-style: normal;
+    //background: #fff;
+    .la {
+      color:#f80;
+      font-style: normal;
+    }
+  }
+}
+.down-list .items:hover {
+  .down-btn:hover, .down-btn {
+    background: #ff8a00;
+    border-color: #ff8a00;
+    color: #fff;
+    font-weight: 700
+  }
+}
+.game-infos {
+  .img-clip {
+    width:90px;
+    height: 90px;
+    margin-right: 10px;
+    position: relative;
+    cursor: pointer;
+    float:left;
+    overflow: hidden;
+  }
+  img {
+    width:90px;
+    height: 90px;
+    display: block;
+
+  }
+  .name {
+    height: 22px;
+    display: block;
+    line-height: 22px;
+    font-size:18px;
+    color:#333;
+    @extend %omit1;
+  }
+  .label {
+    height: 22px;
+    margin-top:9px;
+    font-size:12px;
+    color:#666;
+    @extend %omit1;
+  }
+  .down-btn {
+    display: inline-block;
+    width: 66px;
+    height: 28px;
+    margin-top:7px;
+    border: 1px solid #ccc;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    text-align: center;
+    line-height: 28px;
+    background: #fafafa;
+    background: -moz-linear-gradient(top, #fff, #fafafa);
+    background: -webkit-linear-gradient(top, #fff, #fafafa);
+    background: -ms-linear-gradient(top, #fff, #fafafa);
+    background: -o-linear-gradient(top, #fff, #fafafa);
+  }
+}
+
+.side-rank-list.set {
+  li {
+    .btn {
+      background-position: -87px -80px;
+    }
+    &:hover {
+      .btn {
+        background-color: #f2f2f2;
+      }
+    }
+    .no {
+      background: url(#{$imgOldUrl}pc_new/lit_icon.png) no-repeat 3px -98px;
+      background-color: #f2f2f2;
+      cursor: default;
+    }
+  }
+}
+.gn-list {
+  padding:0 15px;
+  border:1px solid #ebebeb;
+  a {
+    display: block;
+  }
+  .items {
+    padding:0 10px;
+    height: 132px;
+    border-top: 1px dotted #ebebeb;
+    margin-top: -1px;
+    &:hover {
+      background: #fafafa;
+      .names {
+        color:#f80;
+        text-decoration: underline;
+      }
+    }
+  }
+  .names {
+    font-size:18px;
+    color:#333;
+    @extend %omit1;
+    font-weight: 700;
+  }
+  .tp {
+    padding-top: 24px;
+    position: relative;
+  }
+  .time {
+    color:#999;
+    font-size:12px;
+    position: absolute;
+    top:32px;
+    right:0;
+  }
+  .des {
+    margin-top: 7px;
+    font-size:14px;
+    color:#666;
+    line-height: 28px;
+    @include omit(2);
+    text-align: justify;
+  }
+  .label {
+    color:#f80;
+    font-style: normal;
+  }
+}
+.game-ul-list.set {
+  padding-top:10px;
+  li {
+    margin-right:14px;
+    &.last {
+      margin-right:0;
+    }
+  }
+
+}

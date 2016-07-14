@@ -1,0 +1,93 @@
+﻿/* 游戏详情页 下载 */
+.game-info-down{
+	.tag-tit .tag-tit-ul2{
+		width:100%;
+		li{
+			width:50%;
+			padding:0;
+			.name{
+				display:block;
+				padding:0;
+			}
+		}
+	}
+	.context-con{
+		li{
+			display:none;
+			.down{
+				display:block;
+				width:210px;
+				height:45px;
+				margin:15px auto;
+				font-size:18px;
+				line-height:45px;
+				color:#fff;
+				@include icobg;
+				@include bor-radius;
+			}
+			.down.android{
+				background-color:#7acc29;
+				text-indent:62px;
+				background-position:-146px -519px;
+				&:hover{
+					background-color:#a3ce0e;
+				}
+			}
+			.down.ios1{
+				background-color:#83a7d4;
+				text-indent:80px;
+				background-position:-127px -564px;
+				&:hover{
+					background-color:#528fcc;
+				}
+			}
+			.down.ios2{
+				background-color:#54aede;
+				text-indent:80px;
+				background-position:-127px -564px;
+				&:hover{
+					background-color:#2996cc;
+				}
+			}
+			android.no,.ios1.no,.ios2.no{
+				background-color:#b4b4b4;
+				cursor:default;
+				text-align:center;
+				text-indent:0;
+				&:hover{
+					background-color:#b4b4b4;
+				}
+			}
+			.side-info{
+				padding-left:19px;
+				zoom:1;
+				&:after{
+					content:'';
+					visibility: hidden;
+					display: block;
+					clear:both;
+				}
+				*margin-bottom:10px;
+				p{
+					width:50%;
+					*width:49%;
+					height:12px;
+					float:left;
+					margin-bottom:10px;
+					font-size:12px;
+					line-height:12px;
+					color:#666;
+					span{
+						color:#999;
+					}
+					&.long{
+						width:95%;
+					}
+				}
+			}
+			&.current{
+				display:block;
+			}
+		}
+	}
+}

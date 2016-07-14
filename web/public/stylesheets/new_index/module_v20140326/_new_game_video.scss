@@ -1,0 +1,53 @@
+﻿/* 新游视频 */
+.new-game-video{
+	margin-bottom:30px;
+	.box-text{
+		padding-top:15px;
+	}
+	.left{
+		width:480px;
+		height:270px;
+		margin-left:15px;
+		_margin-left:10px;
+		overflow:hidden;
+		float:left;
+		.video-word-con{
+			width:100%;
+			height:100%;
+			.text{
+				font-size:16px;
+			}
+		}
+	}
+	.right{
+		width:490px;
+		height:270px;
+		overflow:hidden;
+		float:left;
+		.video-word-con{
+			width:230px;
+			height:130px;
+			margin:0 0 10px 12px;
+			_margin:0 0 10px 8px;
+			float:left;
+			.text{
+				height:22px;
+				line-height:22px;
+				font-size:12px;
+			}
+			.word{
+				width:85%;
+				padding-left: 28px;
+			}
+			.play{
+				width:24px;
+				height:24px;
+				margin:-12px 0 0 -12px;
+				background-position:8px -157px;
+			}
+			.text .play{
+				margin:0;
+			}
+		}
+	}
+}

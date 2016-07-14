@@ -1,0 +1,67 @@
+﻿@mixin icobg{
+  background:url(http://www.9game.cn/public/images/pc/pc_new/pcnew_ico.png) no-repeat 100px 100px;
+  _background:url(http://www.9game.cn/public/images/pc/pc_new/pcnew_ico.gif) no-repeat 100px 100px;
+}
+@mixin icobg2($left:100px,$top:100px){
+  background:url(http://www.9game.cn/public/images/pc/pc_new/lit_icon.png) no-repeat $left $top;
+  _background:url(http://www.9game.cn/public/images/pc/pc_new/lit_icon.gif) no-repeat $left $top;
+}
+
+@mixin angu($left:100px,$top:100px){
+  background:url(http://www.9game.cn/public/images/pc/pc_new/angular.png) no-repeat $left $top;
+  _background:url(http://www.9game.cn/public/images/pc/pc_new/angular.gif) no-repeat $left $top;
+}
+@mixin hidden{
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+@mixin btnbg{
+    background:#fafafa;
+    background:-moz-linear-gradient(top, #fff,#fafafa);
+    background:-webkit-linear-gradient(top, #fff,#fafafa);
+    background:-ms-linear-gradient(top, #fff,#fafafa);
+    background:-o-linear-gradient(top, #fff,#fafafa);
+}
+@mixin icobg3($left:100px,$top:100px){
+  background:url('http://www.9game.cn/public/images/pc/pc_new/new_index_icon.png') no-repeat $left $top;
+  _background:url('http://www.9game.cn/public/images/pc/pc_new/new_index_icon.gif') no-repeat $left $top;
+}
+@mixin ctrl($left:100px,$top:100px){
+  background:url('http://www.9game.cn/public/images/pc/pc_new/new_index_ctrl.png') no-repeat $left $top;
+  _background:url('http://www.9game.cn/public/images/pc/pc_new/new_index_ctrl.gif') no-repeat $left $top;
+}
+@mixin bor-radius{
+ -moz-border-radius:4px;
+ -ms-border-radius:4px;
+ -webkit-border-radius:4px;
+ border-radius:4px;
+}
+
+// 单行文本省略
+%ellipsis {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+// 圆角
+%border-radius {
+    -o-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+}
+
+// 清除浮动
+%clearfix {
+    *zoom: 1;
+
+    &:after {
+        content: "";
+        visibility: hidden;
+        display: block;
+        clear: both;
+    }
+}

@@ -1,0 +1,183 @@
+@charset "utf-8";
+
+$imgWidth: 240px;
+$imgHeight: 180px;
+
+// 资讯/游戏列表
+// -------------------------
+.list {
+  li {
+    border-bottom: 1px solid #363d46;
+    padding: 20px 0;
+    @extend %clearfix;
+  }
+
+  .img-wrap {
+    float: left;
+    position: relative;
+    display: block;
+    width: $imgWidth;
+    height: $imgHeight;
+    overflow: hidden;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      @include transition(all .3s ease);
+    }
+
+    .border {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: $imgWidth - 2;
+      height: $imgHeight - 2;
+      border: 1px solid $strongColor;
+      display: none;
+    }
+
+    &:hover {
+      img {
+        @include transform(scale(1.06))
+      }
+
+      .border {
+        display: block;
+      }
+    }
+  }
+  
+  .right {
+    margin-left: 260px;
+    color: #a1a5a9;
+
+    a {
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    .title {
+      display: inline-block;
+      max-width: 100%;
+      font-size: 22px;
+      color: #c8c7c8;
+      @extend %ellipsis;
+      margin: 12px 0 10px;
+      
+      &:hover {
+        color: $strongColor;
+      }
+    }
+
+    .text {
+      font-size: 16px;
+      line-height: 36px;
+
+      a {
+        color: #ffc831;
+      }
+    }
+    
+    .star {
+      font-size: 0;
+      margin-top: 18px;
+      
+      span {
+        @include icons(19px, 18px, 0 0);
+        margin-right: 8px;
+
+        &.on {
+          background-position: -29px 0;
+        }
+      }
+    }
+  }
+}
+
+// 美女列表
+// -------------------------
+.girl-list-wrap {
+  .page-change {
+    padding-top: 0;
+  }
+}
+
+.girl-list {
+  width: 1090px;
+  margin-top: 20px;
+  @extend %clearfix;
+
+  li {
+    float: left;
+    border: 1px solid #22244e;
+    padding: 2px;
+    margin: 0 18px 40px 0;
+    cursor: pointer;
+
+    img {
+      width: 240px;
+      height: 325px;
+      @include transition(all .3s ease);
+    }
+
+    .img-wrap {
+      overflow: hidden;
+    }
+
+    .in {
+      position: relative;
+      display: block;
+      border: 1px solid #323569;
+      padding: 2px;
+      overflow: hidden;
+    }
+
+    .info {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      padding: 40px 12px 10px 12px;
+      background: url("#{$imgUrl}/img_info_bg.png") repeat-x left bottom;
+      
+      .title {
+        color: #fff;
+        font-size: 14px;
+        height: 30px;
+        line-height: 30px; 
+        padding-right: 20px;
+        @extend %ellipsis;
+      }
+      
+      .icon-pic {
+        float: right;
+        @include icons(15px, 13px, -58px 0);
+        vertical-align: top;
+        margin-top: 8px;
+      }
+    }
+
+    .border {
+      position: absolute;
+      left: 2px;
+      top: 2px;
+      width: 240px;
+      height: 325px;
+      background: rgba(255, 255, 255,  .2);
+    }
+
+    &:hover {
+      img {
+        @include transform(scale(1.06))
+      }
+      
+      .border {
+        width: 238px;
+        height: 323px;
+        background: none;
+        border: 1px solid $strongColor;
+      }
+    }
+  }
+}

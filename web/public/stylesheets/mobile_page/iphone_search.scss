@@ -1,0 +1,261 @@
+/**
+* IOS 搜索结果页
+*/
+@import "./mixin.scss";
+
+@import "./_mixin_public/_mixin_public"; // 共用元素集合
+
+@import "../baoliao/module/_page_change"; // 分页
+
+@import "./_mixin_public/_mask_code"; // 弹框二维码
+* {
+  font-style: normal;
+}
+.result-num {
+  border-bottom:1px solid #ebebeb;
+  font-size:14px;
+  color:#999;
+  line-height: 45px;
+  .label {
+    margin:0 3px;
+    color:#f60;
+    font-style: normal;
+  }
+}
+
+.game-label {
+  @extend %cf;
+  padding:20px 0 20px 122px;
+  position: relative;
+  color:#333;
+  font-size:14px;
+  .items {
+    height: 21px;
+    margin-bottom: 8px;
+    padding:0 10px;
+    //margin-right: 10px;
+    float:left;
+    line-height: 21px;
+    cursor: pointer;
+    &.on {
+      background:#f80;
+      color:#fff;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  .abs {
+    position: absolute;
+    top:20px;
+    left:0;
+  }
+  .label {
+    color:#f60
+  }
+  .begin {
+    margin-right: 7px;
+    float:left;
+    line-height: 21px;
+  }
+}
+.game-label .items.on {
+  .label {
+    color:#fff;
+  }
+}
+.result-items {
+  @extend %cf;
+  margin-bottom: 10px;
+  border:1px solid #ebebeb;
+}
+.img-col {
+  position: relative;
+  margin:15px 17px 15px 15px;
+  float:left;
+  .img-clip {
+    width:120px;
+    height:120px;
+    position: relative;
+  }
+  img {
+    width:120px;
+    height:120px;
+    @extend %imgTransition;
+  }
+  .btn-down {
+    width:106px;
+    height:28px;
+    display: block;
+    position: relative;
+    margin:10px auto 0;
+    border:1px solid #ccc;
+    @include linearGadient(#fafafa);
+    @include borderRadius(4px);
+    font-size:14px;
+    color:#333;
+    line-height: 28px;
+    cursor: pointer;
+    text-align: center;
+    &:hover {
+      background:#f80;
+      border-color:#f80;
+      color:#fff;
+    }
+  }
+  .code {
+    width:30px;
+    height:28px;
+    display: inline-block;
+    border-left:1px solid #ccc;
+    background-image:url(#{$imgUrl}sc.png);
+    background-repeat: no-repeat;
+    background-position: -15px -3px;
+    float: right;
+  }
+}
+.btn-down:hover {
+  .code {
+    background-position: -14px -39px;
+    border-color:#fe9f30;
+  }
+  .mask-code {
+    display: block;
+  }
+}
+.game-des {
+  width:330px;
+  margin-right:23px;
+  margin-top:17px;
+  float:left;
+  &.set {
+    width:790px;
+  }
+  .name {
+    display: block;
+    height: 25px;
+    color:#333;
+    font-size:18px;
+    @extend %omit1;
+    &:hover {
+      color:#f80;
+    }
+  }
+  .time {
+    margin:5px 0 7px;
+    display: block;
+    color:#999;
+    font-size:14px;
+  }
+  .des {
+    height: 96px;
+    text-align: justify;
+    font-size:14px;
+    color:#666;
+    line-height: 24px;
+    @include omit(4)
+  }
+}
+.game-imgh {
+  margin:15px 0;
+  float:left;
+  @extend %cf;
+  .img {
+    width:135px;
+    height:200px;
+    float:left;
+    margin-left:17px;
+    @extend %imgTransition;
+  }
+}
+.game-imgv {
+  margin:45px 0 45px -2px;
+  float:left;
+  @extend %cf;
+  .img {
+    width:210px;
+    height:140px;
+    float:left;
+    margin-left:19px;
+
+  }
+}
+
+.split-row {
+  @extend %cf;
+  margin-left:-10px;
+  margin-bottom:10px;
+  .result-items {
+    width:488px;
+    padding-bottom:15px;
+    margin-left:10px;
+    float:left;
+  }
+  .game-des {
+    width:320px;
+    margin-right: 10px;
+  }
+  .img-col {
+    padding-bottom:0;
+  }
+}
+.money-gift {
+  width:37px;
+  height:37px;
+  position: absolute;
+  top:-10px;
+  right:-10px;
+  background-image:url(#{$imgUrl}sc.png);
+  background-repeat: no-repeat;
+  background-position: -13px -83px;
+  cursor: pointer;
+  &:hover {
+    background-position: -14px -132px;
+    .mask-code {
+      display: block;
+    }
+  }
+  .mask-code {
+    bottom:40px;
+    right:-72px;
+  }
+}
+
+.page-change {
+  position: relative;
+  left:0;
+  margin:0 auto;
+  padding:0 0 28px;
+}
+
+.sr-noresult {
+  width: 650px;
+  margin: 50px auto 100px auto;
+  background: url("http://www.9game.cn/public/images/pc/pc_new/no_result.png") left top no-repeat
+}
+
+.sr-noresult h4,.sr-noresult p {
+  font-size: 14px;
+  font-weight: bold;
+  color: #666;
+  margin: 0 0 0 130px
+}
+
+.sr-noresult p {
+  font-weight: normal;
+  line-height: 24px
+}
+
+.sr-noresult .orng {
+  color: #f60;
+  padding: 0 4px
+}
+
+.sr-noresult .link {
+  color: #0099ee;
+  text-decoration: underline
+}
+
+.sr-noresult .link:hover {
+  color: #f60
+}

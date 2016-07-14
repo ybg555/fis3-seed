@@ -1,0 +1,20 @@
+﻿/* 资讯列表 左右容器*/
+.left-con{
+	width:600px;
+	float:left;
+	position:relative;
+}
+.right-con{
+	float:right;
+	width:380px;
+	border:1px solid #fff;
+}
+.ol-list-con .game-ul-list {
+	padding: 0 4px;
+	_padding: 0 3px;
+	margin-bottom:35px;
+	border-bottom: 1px solid #ebebeb;
+	li {
+		margin: 5px;
+	}
+}

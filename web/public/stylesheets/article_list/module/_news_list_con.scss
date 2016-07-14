@@ -1,0 +1,76 @@
+﻿@import "../mixin.scss";
+/* 资讯列表 */
+.news-list-con{
+	margin-bottom: 10px;
+	padding-bottom: 0;
+	border-bottom: 1px solid #ebebeb;
+	li{
+		padding:10px;
+		border-bottom:1px dotted #ebebeb;
+		.title{
+			height:28px;
+			line-height:28px;
+			margin-bottom:10px;
+			*margin-bottom:5px;
+			.name{
+				width:75%;
+				font-size:18px;
+				font-weight:700;
+				float:left;
+				
+				@include hidden;
+				a{
+					position:relative;
+					&:hover{
+						text-decoration:underline;
+					}
+				}
+			}
+			.self{
+				width:58px;
+				height:16px;
+				position:absolute;
+				right:-63px;
+				top:5px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/self_tag.png) no-repeat 0 0;
+			}
+			.official{
+				width:58px;
+				height:16px;
+				position:absolute;
+				right:-63px;
+				top:5px;
+				background:url(http://www.9game.cn/public/images/pc/pc_new/self_tag.png) no-repeat 0 -30px;
+			}
+			.time{
+				float:right;
+				color:#999;
+			}
+		}
+		.text{
+			color:#666;
+			line-height:24px;
+			text-indent:2em;
+			height:72px;
+			overflow:hidden;
+		}
+		&.last{
+			border-bottom:0;
+		}
+		&:hover{
+			background:#f7f7f7;
+		}
+		a{
+			_display:block;
+			&:hover{
+				.name{
+					color:#f60;
+					text-decoration:underline;
+				}
+				.text{
+					text-decoration:underline;
+				}
+			}
+		}
+	}
+}

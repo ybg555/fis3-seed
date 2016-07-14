@@ -1,0 +1,17 @@
+﻿/* 网游--游戏详情页 游戏大小 */
+.side-info-nav{
+	background:#f7f7f7;
+	.btn{
+		display:block;
+		height:38px;
+		border-top:1px solid #ebebeb;
+		line-height:38px;
+		font-size:16px;
+		text-align:center;
+		&:hover,&.current{
+			color:#fff;
+			background:#ff8a00;
+			cursor:pointer;
+		}
+	}
+}

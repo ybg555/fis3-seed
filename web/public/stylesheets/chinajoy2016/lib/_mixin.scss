@@ -1,0 +1,128 @@
+@charset "utf-8";
+
+%clearfix {
+  zoom:1;
+  &:after{
+    content:'';
+    visibility: hidden;
+    display: block;
+    clear:both;
+  }
+}
+
+%ellipsis {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+%icons {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("#{$imgUrl}/icons.png") -9999px -9999px no-repeat;
+}
+@mixin icons($width, $height, $position) {
+  @extend %icons;
+  width: $width;
+  height: $height;
+  background-position: $position;
+}
+
+@mixin bor-radius {
+  -moz-border-radius:4px;
+  -khtml-border-radius:4px;
+  -webkit-border-radius:4px;
+  border-radius:4px;
+}
+
+@mixin transition($prop) {
+  -webkit-transition: $prop;
+  -moz-transition: $prop;
+  -ms-transition: $prop;
+  -o-transition: $prop;
+  transition: $prop;
+}
+
+@mixin transform($prop) {
+  -webkit-transform: $prop;
+  -moz-transform: $prop;
+  -ms-transform: $prop;
+  -o-transform: $prop;
+  transform: $prop;
+}
+
+@mixin animation($type,$time,$fun:linear){
+  animation: $type $time $fun 0ms 1 normal;
+  -moz-animation:$type $time $fun 0ms 1 normal;
+  -webkit-animation: $type $time $fun 0ms 1 normal;
+  -o-animation:$type $time $fun 0ms 1 normal;
+}
+
+@mixin keyframes($name){
+  @keyframes #{$name}
+  {
+    @content;
+  }
+  @-webkit-keyframes #{$name}
+  {
+    @content;
+  }
+  @-moz-keyframes #{$name}
+  {
+    @content;
+  }
+  @-o-keyframes #{$name}
+  {
+    @content;
+  }
+}
+
+// $direction-方向; $size-尺寸; $borderColor-颜色; $dashedSize-透明边框的尺寸，当$dashedSize小于$size时可实现尖角三角形
+// @include triangle(top, 10px, #FC6F00);
+// @include triangle(top, 20px, #FC6F00, 6px);
+%triangle-basic {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+@mixin triangle($direction, $size, $borderColor, $dashedSize: $size) {
+  @extend %triangle-basic;
+
+  @if $direction == top {
+    border-bottom: $size solid $borderColor;
+    border-left: $dashedSize dashed transparent;
+    border-right: $dashedSize dashed transparent;
+  }
+  @else if $direction == right {  // 右
+    border-left: $size solid $borderColor;
+    border-top: $dashedSize dashed transparent;
+    border-bottom: $dashedSize dashed transparent;
+  }
+  @else if $direction == bottom {  // 下
+    border-top: $size solid $borderColor;
+    border-left: $dashedSize dashed transparent;
+    border-right: $dashedSize dashed transparent;
+  }
+  @else if $direction == left {  // 左
+    border-right: $size solid $borderColor;
+    border-top: $dashedSize dashed transparent;
+    border-bottom: $dashedSize dashed transparent;
+  }
+  @else if $direction == topLeft {  // 上左
+    border-left: $size solid $borderColor;
+    border-bottom: $dashedSize dashed transparent;
+  }
+  @else if $direction == topRight {  // 上右
+    border-right: $size solid $borderColor;
+    border-bottom: $dashedSize dashed transparent;
+  }
+  @else if $direction == bottomLeft {  // 下左
+    border-left: $size solid $borderColor;
+    border-top: $dashedSize dashed transparent;
+  }
+  @else if $direction == bottomRight {  // 下右
+    border-right: $size solid $borderColor;
+    border-top: $dashedSize dashed transparent;
+  }
+}

@@ -1,0 +1,50 @@
+﻿/*推荐位*/
+.recommend-list{
+	width:100%;
+	border:1px solid #f0f0f0;
+	text-align:center;
+	margin:10px auto;
+	.tr{
+		border:1px dotted #f0f0f0;
+	}
+	.td{
+		width:25%;
+		border:1px dotted #f0f0f0;
+	}
+	.name{
+		
+		height:38px;
+		padding:0 10px;
+		line-height:38px;
+		font-size:16px;
+		display:block;
+		margin:10px;
+		border:1px solid #fff;
+		@include hidden;
+		&:hover{
+			filter:alpha(opacity=70); 
+			-moz-opacity:0.7; 
+			opacity:0.7;
+		}
+	}
+	.red{
+		border-color:#ffccbc;
+		background-color:#fff1ee;
+		color:#ff784f;
+	}
+	.orange{
+		border-color:#ffdaa5;
+		background-color:#fff8e8;
+		color:#f80;
+	}
+	.purple{
+		border-color:#d3d6f7;
+		background-color:#f2f3fe;
+		color:#7b82d1;
+	}
+	.green{
+		border-color:#b8ebd0;
+		background-color:#e8fdf2;
+		color:#08af57;
+	}
+}

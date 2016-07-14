@@ -1,0 +1,176 @@
+﻿.post-content{
+	font-size: 14px;
+	color: #666;
+	margin:0 10px 80px 10px;
+	.para {
+    //margin:0 20px 14px 20px;
+	}
+	p,.text{
+		line-height: 24px;
+		text-align: left;
+		margin-bottom: 10px;
+		text-indent: 2em;
+	}
+  p {
+    margin:0 22px 12px;
+  }
+	.label { 
+		color: #333; font-weight: 700; 
+	}
+	img{
+		max-width: 650px;
+    display: block;
+    margin:0 auto 12px;
+	}
+	.key{
+		color:#f80;
+		font-style:normal;
+	}
+	.emkey{
+		color:#e60000;
+		font-style:normal;
+	}
+	.article-tags{
+		margin:20px 0;
+		line-height:18px;
+		font-size:14px;
+		
+	}
+	.keyword-tag{
+		color:#f80;
+	}
+	.link{
+		color:#1a71de;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+	.modarticle-table { 
+		border: 1px solid #d9d9d9; width: 100%; background: #fafafa; margin: 15px 0; 
+		td, th { border: 1px solid #d9d9d9; font-size: 14px; text-align: center; }
+		.thead { background: #f2f2f2; }
+		th { color: #333333; font-weight: 700; line-height: 32px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+		td { padding: 10px 0; }
+	}
+	.share-con{
+		text-align: right;
+		font-size: 12px;
+		color: #666;
+		margin-bottom: 15px;
+		height:30px;
+	}
+	/* 乐视视频 */
+	.letv-inner-video {
+		width: 600px;
+		height: 450px;
+		margin:0 auto;
+		display:block;
+		margin-bottom:10px;
+		embed{
+			width: 600px;
+		height: 450px;
+		}
+	}
+	#link_pop{
+		color:#f80;
+		text-indent:0;
+		display:inline-block;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+	/* 链接弹窗 */
+	.pop-link{
+		z-index:10;
+		width:308px;
+		padding-bottom:15px;
+		border:1px solid #d9d9d9;
+		background:#fff;
+		display:block;
+		position:absolute;
+		margin-left:-154px;
+		display:none;
+		.conner{
+			width:150px;
+			height:9px;
+			position:absolute;
+			left:50%;
+			margin-left:-75px;
+			bottom:-9px;
+			background:url('http://www.9game.cn/public/images/pc/pc_new/conner2.jpg') no-repeat center center;
+		}
+		.des{
+			padding:15px 0 15px 15px;
+			height:70px;
+			overflow:hidden;
+			display:block;
+		}
+		.img{
+			width:70px;
+			height:70px;
+			float:left;
+			position:relative;
+			font-size:0;
+			margin-right:10px;
+			img{
+				width:70px;
+				height:70px;
+				display:inline-block;
+			}
+		}
+		.name{
+			width:208px;
+			margin-bottom:13px;
+			display:inline-block;
+			font-size:16px;
+			font-weight:700;
+			color:#333;
+			line-height:18px;
+			float:left;
+			@include hidden;
+		}
+		.type{
+			font-size:12px;
+			color:#999;
+			width:104px;
+			display:inline-block;
+			line-height:14px;
+			margin-bottom:10px;
+			float:left;
+			i{
+				font-style:normal;
+				color:#666;
+			}
+		}
+		.down{
+			width:100%;
+			text-align:center;
+			display:block;
+			font-size:0;
+		}
+		.btn{
+			width:106px;
+			height:30px;
+			margin:0 10px;
+			border:1px solid #ccc;
+			font-size:14px;
+			color:#333;
+			line-height:30px;
+			display:inline-block;
+			border-radius:2px;
+			-webkit-border-radius:2px;
+			-moz-border-radius:2px;
+			&:hover{
+				background:#ff8a00;
+				color:#fff;
+				text-decoration:none;
+			}
+		}
+		.btn.no{
+			cursor: default;
+			background-color: #cdcdcd;
+			border-color: #cdcdcd;
+			color:#f7f7f7;
+		}
+	}
+}

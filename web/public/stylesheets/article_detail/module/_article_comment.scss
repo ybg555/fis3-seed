@@ -1,0 +1,335 @@
+﻿@mixin zoom{
+	zoom:1;
+  &:after {visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0;}
+} 
+/* 详情页评论 */
+.article-comment{
+	margin:10px 0 0;
+	.box-title{
+		.count{
+			font-size:16px;
+			color:#4a4a4a;
+			font-weight:400;
+		}
+		.org{
+			color:#f80;
+		}
+	}
+	.context-con{
+		padding:0;
+	}
+	.page-load, .page-unload{
+		border-top:1px solid #ebebeb;
+		padding:5px 0;
+		a{color:#666;}
+	}
+}
+.art-comment-con{
+	margin:0 14px;
+	.little-tit{
+		border-bottom:1px solid #f5f5f5;
+		height:36px;
+		.title{
+			position: relative;
+			display: inline-block;
+			padding: 0 6px;
+			left: 0;
+			top: 10px;
+			font-size: 14px;
+			line-height: 14px;
+			border-left: 2px solid #f60;
+			cursor: default;
+		}
+		.count{
+			font-size:16px;
+			color:#4a4a4a;
+			font-weight:400;
+		}
+		.more{
+			margin-right:2px;
+		}
+	}
+	/* 游戏评论数据 */
+	.comment-data{
+		overflow:hidden;
+		text-align:center;
+		padding:20px 0;
+		.img-con{
+			width:50px;
+			height:50px;
+			display:block;
+			float:left;
+		}
+		.time{
+			font-size:12px;
+			line-height:12px;
+			color:#999;
+		}
+		.player-comment{
+			margin-bottom:10px;
+		}
+		.other-ctrl{
+			@include hidden;
+		}
+		.text{
+			display:block;
+			width:678px;
+			height:64px;
+			padding:10px;
+			border:1px solid #ebebeb;
+			&.red{
+				border-color:#f00;
+			}
+		}
+		.sub-con{
+			height:30px;
+			float:right;
+			.name{
+				line-height:18px;
+				color:#666;
+				font-size:14px;
+				float:left;
+				margin-top:6px;
+			}
+			.star-scroe-con{
+				margin:6px 15px 0 0;
+				float:left;
+				span{
+					margin-right:3px;
+					cursor:pointer;
+				}
+			}
+			.scroe-sub{
+				width:98px;
+				height:28px;
+				display:inline-block;
+				float:left;
+				border:1px solid #ccc;
+				background:#fcfcfc;
+				color:#333;
+				line-height:28px;
+				text-align:center;
+				cursor:pointer;
+				outline:0;
+				font-size: 14px;
+				&:hover{
+					background:#ff8a00;;
+					color:#fff;
+					border-color:#f60;
+				}
+			}
+			
+		}
+		.check{
+			width:330px;
+			float:right;
+			margin-right:10px;
+			.word{
+				color:#666;
+				line-height:30px;
+				float:left;
+				
+			}
+			.yan{
+				width:80px;
+				height:28px;
+				border:1px solid #d9d9d9;
+				display:inline-block;
+				margin-right:5px;
+				text-indent:5px;
+				font-size:12px;
+				float:left;
+			}
+			.img{
+				width:85px;
+				height:28px;
+				border:1px solid #d9d9d9;
+				margin-right:10px;
+				float:left;
+			}
+			.change{
+				color:#1a71de;
+				cursor:pointer;
+				line-height:30px;
+				font-size:12px;
+				float:left;
+			}
+		}
+		.limit{
+			float:left;
+			width:230px;
+			height:30px;
+			line-height:30px;
+			text-align:left;
+			font-size:12px;
+			color:#999;
+			span{
+				margin:0 4px;
+				color:#666;
+				&.high{
+					color:#f00;
+				}
+			} 
+		}
+	}
+	/* 评论列表 */
+	.comment-list{
+		li{
+			position:relative;
+			padding-top:10px;
+			border-bottom:1px solid #ebebeb;
+			display:block;
+			@include zoom;
+			&:nth-last-of-type(1){
+				border:0;
+			}
+			&.last{
+				border-bottom:1px solid #ebebeb;
+			}
+		}
+		.text{
+			line-height:24px;
+			font-size:14px;
+			color:#666;
+			word-wrap: break-word;
+		}
+		.from{
+			font-size:12px;
+			color:#999;
+			line-height:14px;
+			margin-bottom:5px;
+			cursor:default;
+		}
+		.name{
+			font-size:14px;
+			color:#666;
+			font-weight:700;
+			margin-right:10px;
+			&.vip{
+				padding-right: 22px;
+				color:#ff2a43;
+				line-height:20px;
+				display:inline-block;
+				background:url('http://portal.ucgc.ucfly.com/public/images/pc/pc_new/vip_icon.png') no-repeat 1000px 1000px;
+			}
+			&.vip1{background-position: right 0;}
+			&.vip2{background-position: right -50px;}
+			&.vip3{background-position: right -100px;}
+			&.vip4{background-position: right -150px;}
+			&.vip5{background-position: right -200px;}
+			&.vip6{background-position: right -250px;}
+		}
+		.jiu{
+			font-size:12px;
+			color:#494949;
+			padding:0 5px;
+			&:hover{
+				color:#f80;
+				text-decoration:underline;
+			}
+		}
+		.mobile{
+			border-left:1px solid #ebebeb;
+			padding-left:5px;
+		}
+		.time{
+			float:right;
+		}
+		.like{
+			height:20px;
+			padding-left:20px;
+			line-height:20px;
+			color:#999;
+			position:absolute;
+			right:4px;
+			bottom:8px;
+			background:url(http://static.ucgc.ucfly.com:9020/portal/public/images/pc/template5/comment_icon.png) no-repeat 0 1px;
+			cursor:pointer;
+			&.current{	
+				background-position:0 -41px;
+				color:#f60;
+				cursor:default;
+			}
+			&:hover{
+				background-position:0 -41px;
+			}
+			&.no{
+				background-position:0 -82px;
+				color:#f60;
+				cursor:default;
+			}
+		}
+		
+		.img-con{
+			width:50px;
+			height:50px;
+			display:block;
+			float:left;
+			img{
+				width:100%;
+				height:100%;
+				display:block;
+			}
+		}
+		.detail{
+			width:635px;
+			float:right;
+			position:relative;
+			padding-bottom:35px;
+		}
+		.reply{
+			width:635px;
+			float:right;
+			background:#fffdf6;
+			margin:5px 0 15px;
+			
+			position:relative;
+			border:1px solid #d9d9d9;
+			.cor{
+				position:absolute;
+				width:19px;
+				height:11px;
+				display:block;
+				left:29px;
+				top:-11px;
+				background:url(http://static.ucgc.ucfly.com:9020/portal/public/images/pc/template5/comment_icon.png) no-repeat 0 -189px;
+			}
+			.reply-list{
+				padding:0 12px 12px;
+				li{
+					padding:15px 0 10px;
+					border-bottom:1px solid #ebebeb;
+				}
+				.tit{
+					
+					font-size:12px;
+					margin-bottom:10px;
+				}
+				.name{
+					color:#666;
+				}
+				.des{
+					line-height:24px;
+					color:#666;
+				}
+				.time{
+					color:#999;
+				}
+			}
+			.more{
+				height:16px;
+				line-height:16px;
+				color:#1a71de;
+				font-size:14px;
+				text-align:right;
+				padding:0 12px 12px 0;
+				margin-right:12px;
+				background:url(http://static.ucgc.ucfly.com:9020/portal/public/images/pc/template5/comment_icon.png) no-repeat right -124px;
+				&:hover{
+					text-decoration:underline;
+					cursor:pointer;
+				}
+			}
+		}
+	}
+}

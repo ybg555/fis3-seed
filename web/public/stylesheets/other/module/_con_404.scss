@@ -1,0 +1,37 @@
+﻿.con-404{
+	width: 400px;
+	height: 300px;
+	position: absolute;
+	left: 50%;
+	margin: 5% 0 0 -200px;
+	text-align:center;
+    background: url(http://www.9game.cn/public/images/pc/pc_new/404.png) center no-repeat;
+	_background: url(http://www.9game.cn/public/images/pc/pc_new/404.gif) center no-repeat;
+	& p{
+		margin-top: 270px;
+		font-size: 16px;
+		color: #555;
+		text-align: center;
+		}
+	& .home{
+		display: inline-block;
+		margin-top: 45px;
+		@include icobg;
+		background-position: 0 -486px;
+		padding:0 0 0 20px;
+		margin-right: 22px;
+		&:hover{
+			background-position: 0 -509px;
+			}
+		}
+	& .goback{
+	margin-top: 45px;
+	display: inline-block;
+	@include icobg;
+	background-position: -72px -486px;
+	padding:0 0 0 20px;
+	&:hover{
+		background-position: -73px -509px;
+		}
+	}
+}

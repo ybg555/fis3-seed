@@ -1,0 +1,66 @@
+﻿//$url:"./img_/";
+$url:"http://portal.ucgc.ucfly.com/public/images/pc/pc_new/";
+.guide-app-fix{
+	width:100%;
+	height:160px;
+	background:#FCBC3C;
+	position:fixed;
+	left:0;
+	bottom:0;
+	display:none;
+	z-index:999;
+	background:url(#{$url}guide_app2.png) no-repeat center bottom;
+	.box-text{ 
+		width:1000px;
+		height:100%;
+		position:relative;
+		margin:0 auto;
+	}
+	.link{
+		width: 85px;
+	    height: 52px;
+	    display: block;
+	    position: absolute;
+	    top: 87px;
+	    right: 176px;
+		overflow:hidden;
+		text-indent:-555px;
+		&:hover{
+			background-position:0 -65px;
+		}
+	}
+	.word{
+		width:640px;
+		height:92px;
+		position:absolute;
+		left:10px;
+		top:0;
+		overflow:hidden;
+		text-indent:-998px;
+	}
+	.code{
+		width:202px;
+		height:160px;
+		display:block;
+		position:absolute;
+		bottom:0;
+		right:0;
+	}
+	.c{
+		width:96px;
+		height:96px;
+		display:block;
+		position:absolute;
+		bottom:15px;
+		left:55px;
+		display: none;
+	}
+	.close{
+		top: 94px;
+    	right: -35px;
+		width:38px;
+		height:38px;
+		position: absolute;
+		background:none;
+	}
+}

@@ -1,0 +1,171 @@
+﻿/* 网游--游戏详情页  评论 */
+.comment-con{
+	margin:0 14px;
+	display:none;
+	&.current{
+		display:block;
+	}
+	.little-tit{
+		border-bottom:1px solid #f5f5f5;
+		height:36px;
+		h1,h2,h3,p{
+			left:0;
+		}
+		.more{
+			margin-right:2px;
+		}
+	}
+	/* 游戏评论数据 */
+	.comment-data{
+		height:125px;
+		overflow:hidden;
+		text-align:center;
+		margin-bottom:20px;
+		.scroe-con{
+			width:130px;
+			float:left;
+			.scroe{
+				font-size:74px;
+				line-height:84px;
+				font-weight:700;
+				color:#f60;
+			}
+		}
+		.star-scroe-con{
+			height:18px;
+			margin-bottom:10px;
+			padding-left:10px;
+			span{
+				width:18px;
+				height:18px;
+				display:inline-block;
+				margin-right:5px;
+				float:left;
+				@include icobg;
+			}
+			.good{
+				background-position:0 -281px;
+			}
+			.bad{
+				background-position:-108px -281px;
+			}
+			.soso{
+				background-position:-178px -360px;
+			}
+		}
+		.time{
+			font-size:12px;
+			line-height:12px;
+			color:#999;
+		}
+		.player-comment{
+			width:555px;
+			margin-top:20px;
+			float:right;
+			.text{
+				display:block;
+				width:528px;
+				height:42px;
+				padding:10px;
+				margin-bottom:10px;
+				border:1px solid #ebebeb;
+			}
+		}
+		.sub-con{
+			height:30px;
+			float:right;
+			.name{
+				line-height:18px;
+				color:#666;
+				font-size:14px;
+				float:left;
+				margin-top:6px;
+			}
+			.star-scroe-con{
+				margin:6px 15px 0 0;
+				float:left;
+				span{
+					margin-right:3px;
+					cursor:pointer;
+				}
+			}
+			.scroe-sub{
+				width:98px;
+				height:28px;
+				display:inline-block;
+				float:left;
+				border:1px solid #ccc;
+				background:#fcfcfc;
+				color:#333;
+				letter-spacing: 10px;
+				line-height:28px;
+				text-align:center;
+				cursor:pointer;
+				outline:0;
+				&:hover{
+					background:#ff8a00;;
+					color:#fff;
+					border-color:#f60;
+				}
+			}
+		}
+		.limit{
+			float:left;
+			width:230px;
+			height:30px;
+			line-height:30px;
+			text-align:left;
+			color:#999;
+			span{
+				margin:0 4px;
+				color:#666;
+				&.high{
+					color:#f00;
+				}
+			}
+		}
+	}
+	/* 评论列表 */
+	.comment-list{
+		margin-bottom:20px;
+		li{
+			position:relative;
+			padding:10px 0;
+			border-bottom:1px solid #ebebeb;
+			.text{
+				line-height:24px;
+				font-size:14px;
+				color:#666;
+				width: 88%;
+				word-wrap: break-word;
+			}
+			.from{
+				line-height:22px;
+				font-size:12px;
+				color:#999;
+			}
+			.like{
+				height:20px;
+				padding-left:20px;
+				line-height:20px;
+				color:#999;
+				position:absolute;
+				right:4px;
+				top:15px;
+				@include icobg;
+				background-position:0 -546px;
+				cursor:pointer;
+				&.current{	
+					background-position:0 -577px;
+					color:#f60;
+				}
+				&:hover{
+					background-position:0 -577px;
+				}
+			}
+			&.last{
+				border-bottom:1px solid #ebebeb;
+			}
+		}
+	}
+}

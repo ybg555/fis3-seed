@@ -1,0 +1,89 @@
+﻿/* 其他玩家还关注 */
+.sr-adv-con{
+	overflow:hidden;
+	position:relative;
+	.ctrl-con{
+		position:absolute;
+		right:0;
+		top:18px;
+		font-size:0;
+		span{
+			display:inline-block;
+			width:8px;
+			height:8px;
+			background:#ccc;
+			margin-right:4px;
+			@include bor-radius;
+			cursor:pointer;
+			&.current,&:hover{
+				background:#f80;
+			}
+		}
+	}
+	.box-text{
+		width:100%;
+		padding-top:10px;
+		margin-bottom:20px;
+		overflow:hidden;
+		position:relative;
+		ul{
+			width:300%;
+			height:312px;
+			position:relative;
+			@include zoom;
+		}
+		li{
+			margin-left:-10px;
+			width:1000px;
+			float:left;
+		}
+	}
+	.sr-poker{
+		margin:10px 0 0 10px;
+		padding:10px 0 10px 10px;
+		width:311px;
+		_width:308px;
+		float:left;
+		.left-con{
+			width:100%;
+			margin-right:0;
+			_height:129px;
+			_overflow:hidden;
+		}
+		.sr-img-con{
+			width:90px;
+			margin-right:10px;
+		}
+		.pic{
+			width:90px;
+			height:90px;
+		}
+		.down{
+			width:66px;
+			height:23px;
+			font-size:12px;
+			line-height:23px;
+			margin-bottom:0;
+		}
+		
+		.sr-info-con{
+			width:200px;
+		}
+		.title{
+			margin-bottom:8px;
+			a{
+				_width:200px;
+			}
+		}
+		.des{
+			font-size:12px;
+			margin-bottom:5px;
+		}
+		.text{
+			line-height:22px;
+			height:68px;
+			margin-bottom:0;
+			border:0;
+		}
+	}
+}

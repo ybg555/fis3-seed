@@ -1,0 +1,19 @@
+﻿/* 资讯右边推荐 */
+.right-recom{
+	margin-bottom:20px;
+	.box-text{
+		padding-top:10px;
+	}
+	.pic-word-con,.video-word-con{
+		width:230px;
+		height:130px;
+		margin:0 auto 10px auto;
+	}
+	.news-list{
+		padding:0 0 0 9px;
+		a{
+			max-width:100%;
+			_width:98%;
+		}
+	}
+}

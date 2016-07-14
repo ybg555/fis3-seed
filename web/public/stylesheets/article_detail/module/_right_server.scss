@@ -1,0 +1,34 @@
+﻿/* 右侧开服信息 */
+.right-server{
+	.box-text{
+		padding:10px;
+	}
+	table{
+		width:100%;
+		text-align:left;
+	}
+	th{
+		height:26px;
+		background:#fafafa;
+		color:#666;
+		font-weight:400;
+		cursor:default;
+		text-align:center;
+		&.name{
+			text-align:left;
+			width:150px;
+			text-indent:1em;
+		}
+	}
+	td{
+		color:#333;
+		height:30px;
+		line-height:30px;
+		font-size:14px;
+		text-align:center;
+		&.name{
+			text-align:left;
+			text-indent:1em;
+		}
+	}
+}

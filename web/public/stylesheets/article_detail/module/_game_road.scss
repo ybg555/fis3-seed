@@ -1,0 +1,102 @@
+﻿.game-road{
+	height:92px;
+	background:#fafafa;
+	margin: 20px 0;
+	.img{
+		width: 70px;
+		height: 70px;
+		display: block;
+		margin: 10px 10px 0 15px;
+		float: left;
+		position: relative;
+		img{
+			width:70px;
+			height:70px;
+		}
+	}
+	.right-text{
+		margin-top:11px;
+		float:left;
+	}
+	.tit{
+		font-size:16px;
+		line-height:30px;
+		margin-bottom:7px;
+		text-indent:0;
+	}
+	.btn{
+		border:1px solid #ccc;
+		text-align:center;
+		color:#333;
+		text-align:center;
+		border:1px solid #ccc;
+		@include bor-radius;
+		@include btnbg;
+	}
+	.nor{
+		&:hover{
+			background:#ff8a00;
+			border-color:#ff8a00;
+			color:#fff;
+			.count{
+				color:#fff;
+			}
+		}
+	}
+	.other-btn{
+		width:410px;
+		height:36px;
+		overflow:hidden;
+		float:left;
+		.btn{
+			width:86px;
+			height:26px;
+			display:block;
+			margin-right:10px;	
+			line-height:26px;
+			font-size:14px;
+			float:left;
+		}
+		.count{
+			color:#f60;
+		}
+	}
+	.game-down{
+		margin:10px 10px 0 0 ;
+		float:right;
+	}
+	.game-down .btn{
+		width:130px;
+		height:28px;
+		display:block;
+		margin-bottom:10px;
+		line-height:28px;
+		font-size:16px;
+	}
+	.no{
+		border-color:#f3f3f3;
+		background:#f3f3f3;
+		color:#a6a6a6;
+		cursor:default;
+	}
+	.green:hover{
+		color:#fff;
+		border-color:#a3ce0e;
+		background:#a3ce0e;
+	}
+	.red:hover{
+		color:#fff;
+		border-color:#ff622b;
+		background:#ff622b;
+	}
+	.orange:hover{
+		color:#fff;
+		border-color:#ff8a00;
+		background:#ff8a00;
+	}
+	.blue:hover{
+		color:#fff;
+		border-color:#50c0ff;
+		background:#50c0ff;
+	}
+}

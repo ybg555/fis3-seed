@@ -1,0 +1,37 @@
+﻿/* 游戏资质\联系我们 */
+.about-con{
+	padding:20px 15px;
+	border: 1px solid #ebebeb;
+	& h4{
+		font-size: 16px;
+		color: #666;
+	}
+	& p{
+		font-size: 14px;
+		color: #666;
+		line-height: 28px;
+		padding: 0 0 15px 0;
+		margin-bottom: 15px;
+		border-bottom: 1px solid #ebebeb;
+		& span{
+			display: inline-block;
+			color: #999;
+			margin-top: 5px;
+		}
+		& em{
+			color: #999;
+			font-style: normal;
+		}
+		& textarea{
+			width: 100%;
+			line-height: 28px;
+			height: 28px;
+			text-indent: 10px;
+		}
+		&.last{
+			border-bottom:none;
+			padding-bottom:0;
+			margin-bottom: 0;
+		}
+	}
+}

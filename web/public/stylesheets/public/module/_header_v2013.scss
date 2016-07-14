@@ -1,0 +1,158 @@
+﻿@import "../mixin.scss";
+/* 头部 */
+.header{
+	background-color:#e9e9e9;
+	border-bottom:1px solid #dbdbdb;
+	height:33px;
+	/* 头部 左侧 */
+	.contorl{
+		left:0;
+		position: absolute;
+		z-index: 11;
+		li{
+			font-size: 12px;
+			float: left;
+			line-height: 33px;
+			color:#c6c6c6;
+			a{
+				margin:0 8px;
+				&:hover{
+					color:#f60;
+					text-decoration:none;
+				}
+			}
+			.h-con{
+				margin:0 8px;
+				color:#000;
+				display: inline;
+			}
+			h1{
+				font-size: 12px;
+				line-height: 33px;
+				display: inline;
+				font-weight: 400;
+			}
+		}
+	}
+	/* 头部 右侧 */
+	.share{
+		right:0;
+		position: absolute;
+		z-index: 11;
+		li{
+			font-size: 12px;
+			float: left;
+			line-height: 31px;
+			color:#c6c6c6;
+			@include icobg;
+			&.seo-nav{
+				#{$bgpst}:0 100px;
+				position:relative;
+				width:54px;
+				a{
+					padding:0 12px;
+					border:1px solid #e9e9e9;
+					position:relative;
+					z-index:1000;
+					&.current,&:hover{
+						background:#fff;
+						border-color:#d9d9d9;
+						border-bottom-color:#fff;
+						height:32px;
+					}
+				}
+				/* 头部 弹出层 */
+				.seo-nav-list{
+					padding:15px 0;
+					position:absolute;
+					top:33px;
+					right:5px;
+					background:#fff;
+					border:1px solid #d9d9d9;
+					z-index:500;
+					display:none;
+					.list{
+						float:left;
+						width:100px;
+						border-right:1px dotted #e9e9e9;
+						li{
+							height:28px;
+							line-height:28px;
+							color:#333;
+							float:none;
+							background:none;
+							text-align:center;
+							overflow:hidden;
+							a{
+								float: none;
+								display:inline-block;
+								height:28px;
+								width:84px;
+								padding:0;
+								text-align:center;
+								border:0;
+								@include hidden;
+								&:hover{
+									background-color:#ff8a00;
+									color:#fff;
+								}
+							}
+						}
+						&.last{
+							border-right:0;
+						}
+						.tit{
+							cursor:default;
+							#{$fw}:700;
+							#{$fz}:14px;
+							#{$ff}:\5FAE\8F6F\96C5\9ED1;
+							a:hover{
+								background-color:#fff;
+								color:#f60;
+							}
+						}
+					}
+				}
+			}
+			&.weibo{
+				#{$bgpst}:-171px 8px;
+			}
+			&.wechat{
+				#{$bgpst}:-171px -33px;
+				border:1px solid #e9e9e9;
+				position:relative;
+				.code{
+					padding:15px;
+					position:absolute;
+					top:33px;
+					right:0;
+					background:#fff;
+					border:1px solid #d9d9d9;
+					z-index:1;
+					display:none;
+					img{
+						display:block;
+						width:120px;
+						height:120px;
+					}
+				}
+			}
+			&.normal a{
+				padding:0 10px;
+			}
+			&.wechat.current,&.wechat:hover{
+				background-color:#fff;
+				border-color:#d9d9d9;
+				border-bottom-color:#fff;
+			}
+			a{
+				border-top:1px solid #e9e9e9;
+				padding:0 15px 0 31px;
+				&:hover{
+					color:#f60;
+					#{$td}:none;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,141 @@
+﻿/* 新游推荐 */
+.mar30-box{
+	margin-bottom:30px;
+}
+.top-game-recom{
+	border:1px solid #ebebeb;
+	border-left:2px solid #f80;
+	margin-bottom:10px;
+	.title{
+		width:27px;
+		height:121px;
+		padding-left:10px;
+		padding-top:40px;
+		line-height:20px;
+		float:left;
+		border-right:1px solid #ebebeb;
+		font-size:18px;
+		font-weight:700;
+	}
+	.right-recom{
+		margin-left:38px;
+	}
+	.up-side{
+		height:71px;
+	}
+	.top-recom{
+		width:789px;
+		height:56px;
+		padding:7px 0;
+		overflow:hidden;
+		border-right:1px solid #ebebeb;
+		border-bottom:1px dotted #ebebeb;
+	}
+	.top-link{
+		height:15px;
+		line-height:14px;
+		font-size:14px;
+		padding:0 14px;
+		margin:7px 0;
+		display:inline-block;
+		border-right:1px solid #ebebeb;
+		float:left;
+		white-space: nowrap;
+		overflow: hidden;
+		&:hover{
+			color:#f80;
+			text-decoration: underline;
+		}
+		&.last{
+			border:0;
+		}
+		&.org{
+			color:#ff784f;
+		}
+	}
+	
+	.today-game{
+		width:158px;
+		_width:152px;
+		height:70px;
+		float:right;
+		text-align:center;
+		border-bottom:1px dotted #ebebeb;
+		.des{
+			font-size:14px;
+			margin:10px 0;
+			.org{
+				color:#f80;
+			}
+		}
+		.more{
+			display:block;
+			color:#ff784f;
+			font-size:12px;
+			&:hover{
+				text-decoration:underline;
+			}
+			.icon{
+				width:12px;
+				height:12px;
+				display:inline-block;
+				@include icobg3(1px,1px);
+			}
+		}
+	}
+	.down-side{
+		height:80px;
+		padding:5px 0;
+		overflow:hidden;
+		li{
+			height:80px;
+			padding:0 4px;
+			border-right:1px solid #ebebeb;
+			float:left;
+			&.last{
+				border:0;
+			}
+		}
+		.link{
+			width:149px;
+			_width:148px;
+			height:100%;
+			display:block;
+			&:hover{
+				background:#fafafa;
+				.name{
+					color:#f60;
+				}
+			}
+		}
+		.img{
+			width:60px;
+			height:60px;
+			margin: 10px 0 0 5px;
+			position:relative;
+			float:left;
+			overflow:hidden;
+			img{
+				width:60px;
+				height:60px;
+				display:block;
+			}
+		}
+		.right{
+			width:78px;
+			_width:75px;
+			float:right;
+			.name{
+				width:100%;
+				line-height:16px;
+				margin:15px 0 14px 0;
+				font-size:14px;
+				@include hidden;
+			}
+			.des{
+				color:#666;
+				font-size:12px;
+			}
+		}
+	}
+}

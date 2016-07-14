@@ -1,0 +1,70 @@
+﻿/* 游戏资质\联系我们 */
+.about-con{
+	.slg-img{
+		padding-bottom:20px;
+		border-bottom:1px dotted #ebebeb;
+		img{
+			display:block;
+			max-width:100%;
+			margin-bottom:20px;
+		}
+		.p{
+			font-size:16px;
+			color:#666;
+			line-height:30px;
+			text-indent:2em;
+		}
+		
+	}
+	.nor-info{
+		border-bottom:1px dotted #ebebeb;
+		padding:10px 0;
+		zoom:1;
+		&:after{
+			visibility:hidden;
+			display:block;
+			content:"";
+			clear:both;
+		}
+		li{
+			width:50%;
+			float:left;
+			&.long{
+				width:100%;
+			}
+		}
+		.tit{
+			font-size:16px;
+			font-weight:700;
+			line-height:36px;
+			color:#666;
+		}
+		.p{
+			font-size:14px;
+			line-height:28px;
+			color:#666;
+		}
+		.name{
+			color:#999;
+		}
+		.textarea{
+			width: 450px;
+			line-height: 28px;
+			height: 28px;
+			text-indent: 10px;
+			border:1px solid #abadb3;
+		}
+	}
+	.code{
+		padding:15px 0;
+		.tit{
+			font-size:16px;
+			font-weight:700;
+			line-height:36px;
+			color:#666;
+		}
+		.img{
+			display:block;
+		}
+	}
+}

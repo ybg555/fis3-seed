@@ -1,0 +1,802 @@
+﻿@charset "UTF-8";
+
+// 热词专题样式
+// ------------------------
+
+@import "./mixin";
+@import "../game_classify/module/page_change";  // 分页
+@import "../index/module/today_news";  // 排行榜
+@import "../article_list/module/news_list_con";  // 资讯列表
+@import "../index/module/friend_link";  // 友情链接
+
+.page-break {
+    line-height: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #F5F5F5;
+
+    h1 {
+        padding: 0 4px;
+    }
+}
+
+.page-change {
+    padding-bottom: 32px;
+
+    .first-page,
+    .last-page {
+        width: 58px;
+
+    }
+
+    .first-page {
+        margin-right: 6px;
+    }
+
+    .last-page {
+        margin-left: 6px;
+    }
+}
+
+.side-rank-list .side-rank-num {
+    background-color: #ccc;
+}
+
+.arrow {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border: 0 solid #fff;
+}
+
+.figure {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+}
+
+.label {
+    font-size: 0;
+
+    a, span {
+        display: inline-block;
+        font-size: 12px;
+        vertical-align: middle;
+    }
+
+    a {
+        max-width: 4em;
+        *width: 4em;
+        @extend %ellipsis;
+        color: #808080;
+
+        &:hover {
+            color: #f60;
+            text-decoration: underline;
+        }
+    }
+
+    span {
+        color: #F0F0F0;
+        font-weight: 700;
+        padding: 0 8px;
+    }
+}
+
+.score {
+    em {
+        font-size: 14px;
+        font-style: normal;
+        color: #f80;
+    }
+}
+
+
+// 合集页
+// -------------------------
+
+// Tab
+.one-tab-wrap {
+    padding-top: 10px;
+}
+
+.one-tab-con {
+    height: 36px;
+    background: #4D4D4D;
+    margin-bottom: 20px;
+
+    .title {
+        display: block;
+        height: 36px;
+        line-height: 36px;
+        font-size: 16px;
+        text-align: center;
+        color: #fff !important;
+
+
+    }
+
+    .sp {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        display: block;
+        width: 0;
+        height: 16px;
+        margin-top: -8px;
+        border-right: 1px solid #5A5A5A;
+    }
+
+    li {
+        position: relative;
+        float: left;
+        width: 20%;
+
+        &:hover,
+        &.current {
+            background-color: #FF8A00;
+
+            .sp {
+                display: none;
+            }
+        }
+
+        &.current{
+            .arrow {
+                left: 50%;
+                bottom: -8px;
+                display: block;
+                border-width: 8px 8px 0 8px;
+                border-top-color: #FF8A00;
+                margin-left: -8px;
+            }
+        }
+
+        &.last .sp {
+            display: none;
+        }
+    }
+}
+
+// 广告位
+.banner-wrap {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.slide-list {
+    position: relative;
+    width: 960px;
+    height: 240px;
+    margin: 0 auto;
+
+    li {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+
+    .current {
+        display: block;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+.slide-index {
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    width: 100%;
+    font-size: 0;
+    text-align: center;
+
+    i {
+        display: inline-block;
+        width: 10px;
+        height: 2px;
+        background-color: rgba(255,255,255,0.7);
+        *background-color: #E1EAF8;
+        margin: 0 2px;
+    }
+
+    .current {
+        background-color: #f80;
+    }
+}
+
+// 游戏列表
+.game-con-6 {
+    width: 990px;
+    margin-bottom: 32px;
+
+    &.last {
+        margin-bottom: 20px;
+    }
+
+    .box-text {
+        padding: 20px 0 0 9px;
+        overflow: hidden;
+    }
+
+    .game-ul-list {
+        li {
+            width: 148px;
+            border: 1px solid #EBEBEB;
+            margin: 0 6px;
+            padding: 14px 0;
+
+            .corner-publish {
+                background-position: -1px -113px;
+            }
+        }
+
+        a.info {
+            width: auto;
+
+            p {
+                width: 126px;
+                margin: 0 auto;
+                padding: 9px 0 0;
+                font-size: 18px;
+            }
+        }
+
+        .figure {
+            margin: 0 auto;
+        }
+
+        .label,
+        .score {
+            text-align: center;
+            line-height: 20px;
+            color: #808080;
+        }
+
+        .label {
+            font-size: 0;
+
+            a, span {
+                display: inline-block;
+                font-size: 12px;
+                vertical-align: middle;
+            }
+
+            a {
+                width: 4em;
+                @extend %ellipsis;
+                color: #808080;
+
+                &:hover {
+                    color: #f60;
+                    text-decoration: underline;
+                }
+            }
+
+            span {
+                color: #F0F0F0;
+                font-weight: 700;
+                padding: 0 8px;
+            }
+        }
+
+        .score {
+            margin-bottom: 6px;
+        }
+    }
+}
+
+
+// 专题页
+// -------------------------
+
+// 左侧导航栏
+$sidebarWidth:    154px;
+
+.sidebar {
+    position: relative;
+    float: left;
+    width: $sidebarWidth;
+    background-color: #4D4D4D;
+    padding: 18px 0 13px;
+    margin-top: 17px;
+    @extend %border-radius;
+
+    .title {
+        position: absolute;
+        top: -17px;
+        left: 50%;
+        background: url(http://portal.ucgc.ucfly.com/public/images/pc/hotwords/hotwords_title.png) no-repeat;
+        display: block;
+        width: 117px;
+        height: 33px;
+        line-height: 999px;
+        overflow: hidden;
+        margin-left: -58px;
+    }
+
+    li {
+        position: relative;
+        height: 40px;
+        margin: 5px 0;
+        vertical-align: middle;
+    }
+
+    a {
+        display: block;
+        height: 40px;
+        line-height: 40px;
+        color: #fff;
+        font-size: 14px;
+        text-align: center;
+        padding: 0 5px;
+        @extend %ellipsis;
+    }
+
+    a:hover,
+    .current a {
+        position: absolute;
+        left: -4px;
+        width: $sidebarWidth - 10;
+        padding: 0 7px 0 9px;
+        background-color: #f80;
+    }
+
+    .current {
+        .arrow {
+            top: 50%;
+            right: -6px;
+            border-width: 4px 0 4px 4px;
+            border-left-color: #f80;
+            margin-top: -4px;
+        }
+    }
+}
+
+.session {
+    float: right;
+    width: 820px;
+}
+
+// 焦点图
+.focus-con {
+    float: left;
+    width: 580px;
+
+    .focus-img-con {
+        width:100%;
+        height:326px;
+        overflow:hidden;
+        position:relative;
+        .focus-img{
+            width:100%;
+            height:100%;
+            position:relative;
+            li{
+                width:100%;
+                height:100%;
+                position:absolute;
+                left:0;
+                top:0;
+                display:none;
+                &.current{
+                    display:block;
+                }
+                a{
+                    display:block;
+                }
+                img{
+                    display:block;
+                    width:100%;
+                    height:100%;
+                }
+                .text{
+                    width:100%;
+                    height:38px;
+                    position:absolute;
+                    left:0;
+                    bottom:0;
+                    line-height:38px;
+                    font-size:14px;
+                    text-align:center;
+                    color:#fff;
+                    background:rgb(0 ,0,0);
+                    background:rgba(0 ,0,0,0.5);
+                }
+            }
+        }
+        .btn{
+            width:65px;
+            height:120px;
+            display:block;
+            position:absolute;
+            bottom:115px;
+            cursor:pointer;
+            display:none;
+            @include ctrl;
+        }
+        .prev{
+            left:0;
+            background-position:10px 23px;
+            &:hover{
+                background-position:-130px 23px;
+            }
+        }
+        .next{
+            right:0;
+            background-position:-66px 23px;
+            &:hover{
+                background-position:-195px 23px;
+            }
+        }
+    }
+    .focus-ctrl-con{
+        width:100%;
+        height:65px;
+        position:relative;
+        .focus-ctrl{
+            width:540px;
+            height:100%;
+            position:relative;
+            overflow:hidden;
+            margin:0 0 0 23px ;
+            ul{
+                width:100%;
+                height:100%;
+                position:relative;
+            }
+            li{
+                width:102px;
+                margin-right:6px;
+                _margin-right:4px;
+                float:left;
+                position:relative;
+
+                a{
+                    padding-top:5px;
+                    display:block;
+
+                }
+                img{
+                    display:block;
+                    width:102px;
+                    height:60px;
+                }
+                .meng{
+                    display:block;
+                    width:102px;
+                    height:60px;
+                    position:absolute;
+                    left:0;
+                    bottom:0;
+                    background:#000;
+                    _display:none;
+                    opacity:0.3;
+                    -moz-opacity:0.3;
+                    filter: Alpha(opacity=30);
+                    z-index:10;
+                    cursor:pointer;
+                }
+            }
+            li.current a,li a:hover{
+                @include icobg;
+                background-position:-48px -475px;
+            }
+            li.current img,li a:hover img{
+                width:102px;
+                height:58px;
+                border:1px solid #f60;
+            }
+            li.current .meng{
+                display:none;
+            }
+        }
+        .btn{
+            width:18px;
+            height:60px;
+            display:block;
+            position:absolute;
+            bottom:0;
+            @include icobg;
+            background-color:#999;
+            cursor:pointer;
+            &:hover{
+                background-color:#ff8a00;
+            }
+        }
+        .btn.no{
+            background-color:#f5f5f5;
+        }
+        .prev.no{
+            background-position:-153px -430px;
+        }
+        .next.no{
+            background-position:-182px -430px;
+        }
+        .prev{
+            left:0;
+            background-position:-68px -427px;
+        }
+        .next{
+            right:0;
+            background-position:-115px -430px;
+        }
+    }
+}
+
+// 游戏类型介绍
+.type-intro {
+    float: right;
+    width: 198px;
+    height: 358px;
+    line-height: 24px;
+    overflow: hidden;
+    border: 1px solid #EBEBEB;
+    border-top: 2px solid #F60;
+    padding: 15px;
+
+    .title {
+        color: #F60;
+        font-size: 18px;
+        text-align: center;
+        padding-bottom: 12px;
+    }
+
+    .text {
+        color: #666;
+        font-size: 14px;
+    }
+}
+
+// 游戏列表
+.left-con {
+    float: left;
+    width: 580px;
+}
+
+.right-con {
+    float: right;
+    width: 230px;
+}
+
+.game-box {
+    margin-top: 30px;
+}
+
+.game-list {
+    width: 590px;
+    color: #666;
+    margin: 20px 0 10px;
+    @extend %clearfix;
+
+    li {
+        float: left;
+        width: 263px;
+        border: 1px solid #EBEBEB;
+        margin: 0 10px 10px 0;
+        padding: 20px 10px 14px;
+
+        &:hover {
+            background-color: #f7f7f7;
+        }
+    }
+
+    img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .figure {
+        float: left;
+    }
+
+    .name {
+        display: block;
+        font-size: 18px;
+        color: #333;
+        @extend %ellipsis;
+
+        &:hover {
+            color: #f80;
+        }
+    }
+
+    .label {
+        margin: 11px 0;
+    }
+
+    .down {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        display: block;
+        width: 86px;
+        height: 28px;
+        line-height: 28px;
+        border: 1px solid #ccc;
+        @include bor-radius;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 14px;
+        @include btnbg;
+
+        &:hover {
+            background: #ff8a00;
+            border-color: #ff8a00;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .info-box {
+        position: relative;
+    }
+
+    .info {
+        margin-left: 100px;
+        line-height: 20px;
+    }
+
+    .desc {
+        height: 72px;
+        line-height: 24px;
+        overflow: hidden;
+        font-size: 14px;
+        border-top: 1px dotted #EBEBEB;
+        padding-top: 4px;
+        margin-top: 10px;
+
+        a {
+            color: #09E;
+
+            &:hover {
+                color: #f80;
+            }
+        }
+    }
+
+    .corner-publish,
+    .corner-mine,
+    .corner-nine {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 50px;
+        height: 50px;
+    }
+
+    .corner-publish {
+        background: url(http://www.9game.cn/public/images/pc/pc_new/angular.png) no-repeat -1px -113px;
+        _background: url(http://www.9game.cn/public/images/pc/pc_new/angular.gif) no-repeat -1px -113px;
+    }
+
+    .corner-mine {
+        background: url(http://www.9game.cn/public/images/pc/pc_new/angular.png) no-repeat 0 -163px;
+        _background: url(http://www.9game.cn/public/images/pc/pc_new/angular.gif) no-repeat 0 -163px;
+    }
+
+    .corner-nine {
+        width: 54px;
+        height: 54px;
+        background: url(http://portal.ucgc.ucfly.com/public/images/pc/nine_act/nine_active.png) no-repeat 0 -74px;
+    }
+}
+
+.open-test {
+    margin-bottom: 30px;
+}
+
+.filter {
+    font-size: 14px;
+}
+
+.filter-title {
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.filter-list {
+    @extend %clearfix;
+
+    a {
+        float: left;
+        display: block;
+        height: 24px;
+        line-height: 24px;
+        padding-right: 16px;
+        margin-bottom: 8px;
+        color: #666;
+
+        &:hover {
+            color: #f80;
+            text-decoration: underline;
+        }
+
+        &.current {
+            background-color: #f80;
+            color: #fff !important;
+            text-decoration: none !important;
+        }
+    }
+}
+
+// 游戏资讯
+.news-cont {
+    float: left;
+    width: 750px;
+}
+
+.news-list-con {
+    border: 1px solid #EBEBEB;
+    border-top: 0 none;
+    padding: 0 15px;
+
+    li {
+        &:last-child {
+            border-bottom: 0 none;
+        }
+    }
+}
+
+// 合辑
+.hj-cont {
+    float: right;
+    width: 230px;
+}
+
+.hj-list {
+    img {
+        width: 100%;
+        height: 100%;
+        vertical-align: middle;
+        -webkit-transition: all 500ms;
+        -moz-transition: all 500ms;
+        -o-transition: all 500ms;
+        transition: all 500ms;
+    }
+
+    .title {
+        height: 30px;
+        line-height: 30px;
+        color: #666;
+        font-size: 14px;
+        text-align: center;
+        background-color: #FAFAFA;
+        border: 1px solid #EBEBEB;
+        border-top: 0 none;
+        padding: 0 10px;
+        @extend %ellipsis;
+    }
+
+    .pic {
+        display: block;
+        width: 230px;
+        height: 175px;
+        overflow: hidden;
+    }
+
+    li {
+        margin-top: 20px;
+
+        &:hover {
+            img {
+                -webkit-transform: scale(1.05);
+                -moz-transform: scale(1.05);
+                -o-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+        }
+    }
+}
+
+.btm-box {
+    margin-bottom: 30px;
+}

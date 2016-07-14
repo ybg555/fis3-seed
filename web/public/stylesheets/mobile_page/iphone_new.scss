@@ -1,0 +1,71 @@
+/**
+* IOS 资讯列表
+*/
+@import "./mixin.scss";
+
+@import "./_mixin_public/_mixin_public"; // 共用元素集合
+@import "../baoliao/module/_page_change"; // 分页
+
+.new-main {
+  margin-bottom:54px;
+  border:1px solid #ebebeb;
+  a {
+    display: block;
+    border-top:1px dotted #ebebeb;
+  }
+  .list {
+
+  }
+  .items {
+    padding:0 15px;
+    height: 160px;
+    margin-top: -1px;
+    &:hover {
+      background: #fafafa;
+      .name {
+        color:#f80;
+        text-decoration: underline;
+      }
+    }
+  }
+  .name {
+    height: 25px;
+    padding-top: 22px;
+    line-height: 25px;
+    font-size:18px;
+    color:#333;
+    font-weight: 700;
+    @extend %omit1;
+  }
+  .des {
+    height: 48px;
+    margin-top: 10px;
+    line-height: 24px;
+    @include omit(2);
+    color:#666;
+    font-size: 14px;
+  }
+  .time {
+    display: block;
+    margin-top: 13px;
+    color:#999;
+    font-size:12px;
+  }
+}
+.page-change {
+  width:auto;
+  left:0;
+  margin:0 15px;
+  position: relative;
+  border-top:1px solid #ebebeb;
+  .page-change-list a {
+    border-top:none;
+  }
+  .change.set {
+    width:58px;
+    margin:0 7px;
+  }
+  .now {
+    width:52px;
+  }
+}

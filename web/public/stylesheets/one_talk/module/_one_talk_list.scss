@@ -1,0 +1,74 @@
+﻿@import "../mixin.scss";   			
+.one-talk-list{
+	padding-top:3px;
+	li{
+		padding:17px 0;
+		height:100px;
+		border-bottom:1px dotted #ebebeb;
+		margin-top:-1px;
+		&:hover{
+			background-color:#fafafa;
+		}
+		a:hover{
+			text-decoration:underline;
+		}
+	}
+	.img{
+		width:100px;
+		height:100px;
+		float:left;
+		margin-right:10px;
+		img{
+			display:block;
+			width:100px;
+			height:100px;
+		}
+	}
+	.des{
+		width:583px;
+		float:left;
+		position:relative;
+	}
+	.tit{
+		font-size:14px;
+		font-weight:700;
+		padding:1px 0 4px;
+		a{
+			max-width:432px;
+			_width:432px;
+			font-size:16px;
+			display:inline-block;
+			@include hidden;
+		}
+	}
+	.text{
+		height:48px;
+		font-size:14px;
+		line-height:24px;
+		color:#666;
+		margin-bottom:6px;
+		overflow:hidden;
+		.more{
+			color:#f80;
+		}
+	}
+	.time{
+		position:absolute;
+		right:0;
+		top:2px;
+		color:#999;
+		font-size:12px;
+		cursor:default;
+	}
+	.aside{
+		font-size:12px;
+		color:#999;
+	}
+	.spa{
+		margin-right:30px;
+	}
+	.org{
+		color:#f80;
+		padding:0 2px;
+	}
+}

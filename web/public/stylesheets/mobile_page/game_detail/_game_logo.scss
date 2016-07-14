@@ -1,0 +1,38 @@
+﻿/* 游戏详情页 游戏logo */
+.game-logo{
+	margin-bottom:10px;
+	.logo{
+		width:140px;
+		height:140px;
+		margin:15px auto 10px auto;
+		position:relative;
+		img{
+			width:140px;
+			height:140px;
+		}
+	}
+	.logo.logo90{
+		width:90px;
+		height:90px;
+		img{
+			width:90px;
+			height:90px;
+		}
+	}
+	.logo.logo120{
+		width:120px;
+		height:120px;
+		img{
+			width:120px;
+			height:120px;
+		}
+	}
+	.name{
+		font-size:18px;
+		font-weight:700;
+		text-align:center;
+		line-height:28px;
+		padding:0 10px;
+		@include hidden;
+	}
+}

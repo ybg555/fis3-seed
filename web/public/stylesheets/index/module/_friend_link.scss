@@ -1,0 +1,27 @@
+﻿/* 友情链接 */
+.friend-link{
+	margin-bottom:10px;
+	.box-text{
+		padding:10px 0;
+	}
+}
+.link-con{
+	display:none;
+	a{
+		display:inline-block;
+		padding:0 6px;
+		margin:5px 0;
+		border-right:1px solid #dbdbdb;
+		line-height:14px;
+		height:14px;
+		&:hover{
+			text-decoration:underline;
+		}
+		&.last{
+			border-right:0;
+		}
+	}
+	&.current{
+		display:block;
+	}
+}

@@ -1,0 +1,79 @@
+﻿@charset "utf-8";
+
+//@import "compass/reset";
+@import "lib/var";
+@import "lib/mixin";
+
+// 基础样式
+// ----------------------
+body{
+  font: 12px/1.4 Microsoft Yahei, simsun, Arial, Helvetica;
+  background: #080916;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.pd30 {
+  padding-bottom: 30px;
+}
+
+// 页面大板块容器
+// ----------------------
+.content {
+  position: relative;
+  background: #0a0c27 url("#{$imgUrl}/bg.png");
+  border-top: 1px solid #27274d;
+
+  .inner {
+    width: $innerWidth;
+    margin: 0 auto;
+
+  }
+  
+  .round-line {
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    display: block;
+    width: 160px;
+    height: 39px;
+    margin-left: -80px;
+    background: url("#{$imgUrl}/round_line.png") no-repeat;
+  }
+  &.content-2{
+    background-image: url("#{$imgUrl}/bg2.png");
+    border-top: 1px solid #1b1c40;
+    .round-line {
+      background: url("#{$imgUrl}/round_line2.png") no-repeat;
+    }
+  }
+}
+
+// 面包屑
+// ----------------------
+.breadcrumbs {
+  font-size: 12px;
+  color: #8d9198;
+  padding: 20px 0 0;
+
+  a, .sp {
+    color: #41455d;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+@import "module/pub";  // PC门户站通用头底
+@import "module/list";  // 列表页
+@import "module/page";  // 分页
+@import "module/detail";  // 详情页
+@import "module/index";  // 首页

@@ -1,0 +1,44 @@
+﻿@import "./module/_game_classify_con.scss";   			/* 游戏分类 */
+@import "./module/_game_recom_con.scss";   			/* 游戏推荐 */
+@import "./module/_game_rank_con.scss";   			/* 游戏排行 */
+@import "./module/_game_try_con.scss";   			/* 新游体验区 */
+@import "./module/_game_adv_con.scss";   			/* 广告 */
+
+
+
+/* 标题切换   game_recom_con 和  game_rank_con 公用*/
+.one-tab-con{
+	height:36px;
+	margin-bottom:20px;
+	background:#fafafa;
+	border-bottom:1px solid #ebebeb;
+	li{
+		width:20%;
+		height:46px;
+		line-height:16px;
+		text-align:center;
+		
+		float:left;
+		cursor:pointer;
+		
+		&.last .title{
+			border-right:0;
+		}
+		&.current{
+			background:url('http://www.9game.cn/public/images/pc/pc_new/game_search_tab.png') no-repeat center bottom;
+			.title{
+				color:#f80;
+			}
+		}
+	}
+	.title{
+		margin:10px 0;
+		display:block;
+		font-weight:400;
+		font-size:16px;
+		border-right:1px solid #dedede;
+		&:hover{
+			color:#f80;
+		}
+	}
+}

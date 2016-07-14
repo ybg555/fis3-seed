@@ -1,0 +1,23 @@
+﻿/* 手机游戏推荐 */
+.game-con-5{
+	width:600px;
+	float:left;
+	border-bottom:1px solid #f5f5f5;
+	.more{
+		.icon{
+			width:12px;
+			height:12px;
+			display:inline-block;
+			@include icobg3(1px,1px);
+		}
+		
+		.org{
+			color:#f80;
+		}
+	}
+	.box-text{
+		padding:10px 0 0 6px;
+		height:500px;
+		overflow:hidden;
+	}
+}

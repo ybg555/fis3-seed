@@ -1,0 +1,29 @@
+﻿
+/* 页面加载 */
+.page-load,.page-unload{
+	text-align:center;
+	height: 28px;
+	line-height: 28px;
+	padding-bottom: 20px;
+	img{
+		margin-right:10px;
+		vertical-align: middle;
+	}
+	a.page-reload{
+		margin:0 4px;
+		color:#f60;
+		&:hover{
+			text-decoration:underline;
+		}
+		&.more{
+			color:#333;
+			&:hover{
+				color:#f60;
+				text-decoration:underline;
+			}
+		}
+	}
+}
+.page-unload{
+	display:none;
+}

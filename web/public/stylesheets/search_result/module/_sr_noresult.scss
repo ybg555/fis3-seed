@@ -1,0 +1,27 @@
+﻿/* 无结果 */
+.sr-noresult{
+	width:650px;
+	margin:50px auto 100px auto;
+	background: url('http://www.9game.cn/public/images/pc/pc_new/no_result.png') left top no-repeat;
+	& h4, p{
+		font-size:14px;
+		font-weight: bold;
+		color: #666;
+		margin: 0 0 0 130px;
+	}
+	& p{
+		font-weight: normal;
+		line-height: 24px;
+	}
+	& .orng{
+		color: #f60;
+		padding:0 4px;
+	}
+	.link{
+		color:#0099ee;
+		text-decoration:underline;
+		&:hover{
+			color:#f60;
+		}
+	}
+}

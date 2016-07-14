@@ -1,0 +1,77 @@
+
+/**
+* 礼包列表
+*/
+
+.list {
+  .name {
+    height: 24px;
+    display: block;
+    font-size:14px;
+    color:#333;
+    line-height: 24px;
+    @extend %omit1;
+    font-weight: normal;
+    &:hover {
+      color:#f60;
+    }
+  }
+  .gift-ico {
+    width:15px;
+    height:15px;
+    margin-left: 5px;
+    display: inline-block;
+    background:url(#{$imgUrl}sc.png) no-repeat -80px -144px;
+    vertical-align: text-top;
+  }
+  .des {
+    height:40px;
+    margin:7px 0 2px;
+    color:#666;
+    font-size:12px;
+    line-height:20px;
+    @include omit(2);
+    text-align: justify;
+  }
+  .bt-col {
+    @extend %cf;
+  }
+}
+.bt-col {
+  .num-states {
+    display: block;
+    float:left;
+    color:#999;
+    font-size:12px;
+    line-height: 25px;
+  }
+  .label {
+    color:#f80;
+  }
+  .follow {
+    width:55px;
+    height:25px;
+    position: relative;
+    display: block;
+    float: right;
+    color:#fff;
+    font-size:14px;
+    line-height: 25px;
+    text-align: center;
+    &.on {
+      background:#68d662;
+    }
+    &.off {
+      background: #e6e6e6;
+    }
+    .mask-code {
+      bottom:40px;
+    }
+  }
+}
+
+.bt-col .follow:hover {
+  .mask-code {
+    display: block;
+  }
+}

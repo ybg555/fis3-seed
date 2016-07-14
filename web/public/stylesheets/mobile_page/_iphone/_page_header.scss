@@ -1,0 +1,36 @@
+﻿/* 详情页标题 */
+.page-header{
+	text-align:center;
+	margin: 30px 10px 20px 10px;
+	border-bottom:1px solid #ebebeb;
+	& h1{
+		font-size:20px;
+		font-weight:bold;
+		color:#333;
+		margin-bottom:10px; 
+	}
+	& .meta{
+		font-size:12px;
+		color: #666;
+		margin-bottom: 14px;
+		.sp{
+			margin-left:10px;
+		}
+	}
+	& .phone-book{
+		padding-left:30px;
+		font-size:12px;
+		line-height:12px;
+		background:url(http://www.9game.cn/public/images/pc/pc_new/phone.png) no-repeat 18px 1px;
+	}
+}
+
+.phone-ico {
+  width:9px;
+  height:13px;
+  margin-left:3px;
+  margin-right:3px;
+  display: inline-block;
+  background: url(#{$imgUrl}sc.png) no-repeat -80px -46px;
+  vertical-align: text-top;
+}

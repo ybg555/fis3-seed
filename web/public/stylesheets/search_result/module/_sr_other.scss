@@ -1,0 +1,20 @@
+﻿/* 其余搜索结果 */
+.sr-other{
+	margin-left:-10px;
+	margin-bottom:25px;
+	_margin-bottom:25px;
+	@include zoom;
+	.sr-poker{
+		width:473px;
+		_width:468px;
+		float:left;
+		margin:0 0 10px 10px;
+		.left-con{
+			margin-right:0;
+		}
+		.text{
+			margin-bottom: 6px;
+			height: 96px;
+		}
+	}
+}

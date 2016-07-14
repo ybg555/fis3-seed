@@ -1,0 +1,98 @@
+﻿/* 游戏分类 */
+.classify-con{
+	padding-top:15px;
+	margin-bottom:30px;
+	.box-text{
+		padding-top:15px;
+		margin-bottom:10px;
+	}
+	.little-tit{
+		height:16px;
+		line-height:16px;
+		margin-bottom:5px;
+		h2,h3,p,.more{
+			top:0;
+		}
+		h2,h3,p{
+			top:0;
+			left:10px;
+		}
+	}
+}
+.pc-game-3{
+	width:494px;
+	height:195px;
+	border:1px solid #f5f5f5;
+	border-width:0 1px 1px 0;
+	float:left;
+	.game-ul-list{
+		padding-left:0;
+		li{
+			margin:0 6px;
+			_margin:0 3px;
+			margin-bottom:0;
+		}
+	}
+}
+.pc-game-3.sec{
+	border-right:0;
+}
+.pc-game-3.thir{
+	padding-top:15px;
+	border-bottom:0;
+}
+.pc-game-3.last{
+	padding-top:15px;
+	border-bottom:0;
+	border-right:0;
+}
+
+.game-con-6{ 
+	.box-text{
+	height: 510px;
+    }
+    .box-con-5{
+    height: 90px;
+    overflow: hidden;
+    &:after{
+    	clear: both;
+    	}
+    }
+    .box-title-vertical{
+    float: left;
+    height: 90px;
+    margin-right:10px;
+	margin-left:15px;
+    _margin-right:5px;
+    border-left: 2px solid #ff6600;
+    overflow: hidden;
+    & h2{
+    	width: 18px;
+    	_width:9px;
+    	float: left;
+    	font-size: 20px;
+    	letter-spacing: 20px;
+    	_letter-spacing: 10px;
+    	padding:4px 10px 0 9px;
+    	_padding:6px 0 0 9px;
+    	line-height: 21px;
+    	}
+    }
+    .box-con-5 a{
+    float: left;
+    display:block;
+    font-size: 16px;
+    display: block;
+    width: 140px;
+    height: 40px;
+    margin: 0 14px 10px 0;
+    _margin: 0 12px 10px 0;
+    line-height: 40px;
+    text-align: center;
+    background: #f5f5f5;
+    &:hover{
+    	background: #ff8a00;
+    	color: #fff;
+    	}
+    }
+}

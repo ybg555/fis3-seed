@@ -1,0 +1,24 @@
+﻿.atr-next{
+	background:#fff9f3;
+	height:34px;
+	margin-bottom:20px;
+	font-size:14px;
+	.link{
+		width:49%;
+		float:left;
+		line-height:34px;
+		text-indent:15px;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
+	}
+	.link a{
+		color:#333;
+	}
+	.link a:hover{
+		color:#f60;
+	}
+	.link .toward{
+		color:#999;
+	}
+}

@@ -1,0 +1,68 @@
+﻿@import "../mixin.scss"; 
+/* 找游戏 -- 游戏分类 */
+.game-classify{
+	margin-bottom:25px;
+	.server-more{
+		position:absolute;
+		right:0;
+		top:3px;
+		display:block;
+		width:80px;
+		height:26px;
+		@include icobg2(64px,-248px);
+		background-color:#ff8a00;
+		@include bor-radius;
+		line-height:25px;
+		color:#fff;
+		text-indent:5px;
+		font-size:14px;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+}
+.classify{
+	padding:15px 0 10px 0;
+	border-bottom:1px dotted #ebebeb;
+	overflow:hidden;
+	zoom:1;
+	&.last{
+		border-bottom:1px solid #ebebeb;
+	}
+	&:after{
+		content:'';
+		visibility: hidden;
+		display: block;
+		clear:both;
+	}
+	.name{
+		width:90px;
+		float:left;
+		color:#666;
+		font-size:14px;
+		line-height:28px;
+		font-weight:700;
+		text-align:center;
+	}
+	.type{
+		width:890px;
+		float:left;
+		a{
+			display:inline-block;
+			padding:0 8px;
+			margin:2px 0;
+			font-size:14px;
+			line-height:25px;
+			&:hover{
+				text-decoration:underline;
+			}
+			&.current{
+				background:#ff8a00;
+				color:#fff;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+	} 
+}

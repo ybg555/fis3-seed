@@ -1,0 +1,36 @@
+﻿.classify{
+	padding:10px 0 5px 0;
+	border-bottom:1px dotted #ebebeb;
+	overflow:hidden;
+	zoom:1;
+	&.last{
+		border-bottom:1px solid #ebebeb;
+	}
+	&:after{
+		content:'';
+		visibility: hidden;
+		display: block;
+		clear:both;
+	}
+	.type{
+		width:auto;
+		float:left;
+		a{
+			display:inline-block;
+			padding:0 8px;
+			margin:3px 12px;
+			font-size:14px;
+			line-height:25px;
+			&:hover{
+				text-decoration:underline;
+			}
+			&.current{
+				background:#ff8a00;
+				color:#fff;
+				&:hover{
+					text-decoration:none;
+				}
+			}
+		}
+	}
+}

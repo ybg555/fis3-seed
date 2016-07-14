@@ -1,0 +1,74 @@
+﻿/* 游戏icon和文字 */
+@import "../mixin.scss";
+.fifth-contain{
+	width:100%;
+	height:0;
+	position:absolute;
+	top:178px;
+	background:url(http://img.9game.cn/public/images/pc/fifth_year/bg.jpg) no-repeat center top;
+	z-index:999;
+	.mid-box{
+		width:1000px;
+		height:100%;
+		margin:0 auto;
+		background:url(http://img.9game.cn/public/images/pc/fifth_year/bg.jpg) no-repeat center top;
+		position:relative;
+	}
+	.sui{
+		width:1100px;
+		height:504px;
+		left:-60px;
+		top:10px;
+		background:url(http://img.9game.cn/public/images/pc/fifth_year/suipian.png) no-repeat center top;
+		position:absolute;
+		opacity:0;
+		display:none;
+	}
+	.word{
+		width:900px;
+		height:787px;
+		left:-149px;
+		top:-142px;
+		position:absolute;
+		z-index:10;
+		opacity:0;
+		display:none;
+	}
+	.gift{
+		width:405px;
+		height:373px;
+		right:-100px;
+		top:110px;
+		position:absolute;
+		z-index:5;
+		opacity:0;
+		display:none;
+	}
+	.btn{
+		width:298px;
+		height:58px;
+		right: 190px;
+		bottom: 43px;
+		position:absolute;
+		background:url(http://img.9game.cn/public/images/pc/fifth_year/btn.gif) no-repeat center top;
+		cursor:pointer;
+		z-index:8;
+		opacity:0;
+		display:none;
+	}
+	.close{
+		width:32px;
+		height:32px;
+		position:absolute;
+		right:10px;
+		top:10px;
+		background:url(http://img.9game.cn/public/images/pc/fifth_year/close.png) no-repeat center top;
+		cursor:pointer;
+	}
+}
+.fifth_banner_litt{
+	margin-bottom:10px;
+	img{
+		display:block;
+	}
+}

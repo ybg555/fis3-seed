@@ -1,0 +1,51 @@
+﻿/* 文章列表 */
+.news-list{
+	padding:5px 0 0 15px;
+	li{
+		padding-left:15px;
+		line-height:28px;
+		*line-height:25px;
+		_line-height:28px;
+		overflow:hidden;
+		@include icobg;
+		background-position:-196px -284px;
+		a{
+			display:inline-block;
+			float:left;
+			max-width:80%;
+			*width:80%;
+			font-size:14px;
+			@include hidden;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+		.date{
+			font-size:12px;
+			color:#999;
+			float:right;
+			margin-right:10px;
+		}
+		a.remine{
+			display: inline-block;
+			width: 56px;
+			height: 23px;
+			line-height: 24px;
+			text-indent: 25px;
+			font-size: 12px;
+			color: #666;
+			text-decoration: none;
+			float:right;
+			margin-right:2px;
+			@include icobg;
+			background-position: -88px -426px;
+			background-color: #f2f2f2;
+			@include bor-radius;
+			&:hover{
+				background-position: -138px -426px;
+				background-color: #50c0ff;
+				color: #fff;
+			}
+		}
+	}
+}

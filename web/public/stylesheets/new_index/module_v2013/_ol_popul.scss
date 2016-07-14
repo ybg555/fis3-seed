@@ -1,0 +1,199 @@
+﻿@import "../mixin.scss"; 
+/* 网游 焦点图 */
+.ol-popul{
+	margin-bottom:30px;
+}
+.focus-con{
+	width:600px;
+	float:left;
+	.focus-img-con{
+		width:100%;
+		height:340px;
+		overflow:hidden;
+		*position:relative;
+		.focus-img{
+			width:100%;
+			height:100%;
+			position:relative;
+			li{
+				width:100%;
+				height:100%;
+				position:absolute;
+				left:0;
+				top:0;
+				display:none;
+				&.current{
+					display:block;
+				}
+				a{
+					display:block;
+				}
+				img{
+					display:block;
+					width:100%;
+					height:100%;
+				}
+				.text{
+					width:100%;
+					height:38px;
+					position:absolute;
+					left:0;
+					bottom:0;
+					line-height:38px;
+					font-size:14px;
+					text-align:center;
+					color:#fff;
+					background:rgb(0 ,0,0);
+					background:rgba(0 ,0,0,0.5);
+				}
+			}
+		}
+	}
+	.focus-ctrl-con{
+		width:100%;
+		height:65px;
+		position:relative;
+		.focus-ctrl{
+			width:555px;
+			height:100%;
+			position:relative;
+			overflow:hidden;
+			margin:0 0 0 23px ;
+			ul{
+				height:65px;
+				position:relative;
+			}
+			li{
+				width:105px;
+				margin-right:7px;
+				float:left;
+				position:relative;
+				
+				a{
+					padding-top:5px;
+					display:block;
+					
+				}
+				img{
+					display:block;
+					width:105px;
+					height:60px;
+				}
+				.meng{
+					display:block;
+					width:105px;
+					height:60px;
+					position:absolute;
+					left:0;
+					bottom:0;
+					background:#000;
+					_display:none;
+					opacity:0.3;
+					-moz-opacity:0.3;
+					filter: Alpha(opacity=30);
+					z-index:10;
+					cursor:pointer;
+				}
+			}
+			li.current a,li a:hover{
+				@include icobg;
+				background-position:-48px -475px;
+			}
+			li.current img,li a:hover img{
+				width:105px;
+				height:58px;
+				border:1px solid #f60;
+			}
+			li.current .meng{
+				display:none;
+			}
+		}
+		.btn{
+			width:18px;
+			height:60px;
+			display:block;
+			position:absolute;
+			bottom:0;
+			@include icobg;
+			background-color:#999;
+			&:hover{
+				background-color:#ff8a00;
+			}
+		}
+		.btn.no{
+			background-color:#f5f5f5;
+		}
+		.prev.no{
+			background-position:-153px -430px;
+		}
+		.next.no{
+			background-position:-182px -430px;
+		}
+		.prev{
+			left:0;
+			background-position:-68px -430px;
+		}
+		.next{
+			right:0;
+			background-position:-115px -430px;
+		}
+	}
+}
+
+/* 网游频道--热门新闻 */
+.ol-hotnews-con{
+	width:364px;
+	padding:5px 7px 0 7px;
+	border:1px solid #ebebeb;
+	float:right;
+	.tit{
+		font-size:18px;
+		font-weight:700;
+		text-align:center;
+		line-height:48px;
+		color:#f60;
+		border-bottom:1px dotted #ebebeb;
+		margin-bottom:3px;
+		a{
+			color:#f60;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}
+.hotnews-list{
+	margin-bottom:6px;
+	li{
+		line-height:28px;
+		*line-height:24px;
+		font-size:14px;
+		height:28px;
+		*height:24px;
+		overflow:hidden;
+		.type{
+			display:inline-block;
+			padding-right:10px;
+			line-height:14px;
+			float:left;
+			margin-top:6px;
+			border-right:1px solid #d0d0d0;
+		}
+		a{
+			width:270px;
+			display:inline-block;
+			padding-left:10px;
+			float:left;
+			@include hidden;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+		.date{
+			display:inline-block;
+			color:#999;
+			float:right;
+			font-size:12px;
+		}
+	}
+}

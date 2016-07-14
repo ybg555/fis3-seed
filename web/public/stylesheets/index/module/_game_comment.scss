@@ -1,0 +1,61 @@
+﻿/* 游戏评测 */
+.game-comment{
+	width: 600px;
+	float: left;
+	.box-text{
+		padding:0 15px;
+	}
+	.today-pic{
+		height:135px;
+		padding: 15px 0;
+		border-bottom:1px solid #ebebeb;
+		overflow:hidden;
+	}
+	.pic-word-con{
+		width:180px;
+		height:135px;
+		float:left;
+		margin-right:9px;
+		&.last{
+			_padding-top:0;
+			margin-right:0;
+		}
+	}
+	.icon-word-list{
+		margin-left:-10px;
+		zoom:1;
+		a:hover{
+			.tit{
+				color:#f60;
+			}
+		}
+		.text{
+			line-height:22px;
+			height:44px;
+			overflow:hidden;
+		}
+		&:after{
+			content:'';
+			visibility: hidden;
+			display: block;
+			clear:both;
+		}
+		li{
+			width:280px;
+			_width:275px;
+			height:83px;
+			margin-left:10px;
+			float:left;
+			&:hover{
+				border-color:#fafafa;
+			}
+		}
+		.pic{
+			margin-top:6px;
+		}
+	}
+	.icon-word-list .right-text{
+		width:185px;
+		_width:175px;
+	}
+}

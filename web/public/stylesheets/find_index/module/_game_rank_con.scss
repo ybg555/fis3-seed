@@ -1,0 +1,155 @@
+﻿@import "../mixin.scss";
+.game-rank-con{
+	.box-title .more{
+		margin-right:15px;
+	}
+	.box-text{
+		padding:20px 15px;
+	}
+	.text-tab-con{
+		height:564px;
+	}
+	.rank-poker{
+		display:none;
+		margin-left:-15px;
+		@include zoom;
+		li{
+			width:178px;
+			_width:174px;
+			margin:0 0 15px 15px;
+			float:left;
+			border:1px solid #ebebeb;
+			position:relative;
+			&:hover{
+				background:#fafafa;
+			}
+		}
+		.img{
+			width:120px;
+			height:120px;
+			margin:14px auto 0;
+			position:relative;
+			display:block;
+			img{
+				width:100%;
+				height:100%;
+				display:block;
+				_cursor:pointer;
+			}
+			.radius120{
+				position:absolute;
+				left:0;
+				top:0;
+				_cursor:pointer;
+			}
+		}
+		.name{
+			width:90%;
+			padding:0 5%;
+			@include hidden;
+			line-height:42px;
+			font-size:16px;
+			text-align:center;
+		}
+		.type {
+			color: #999;
+			line-height: 22px;
+			text-align:center;
+			cursor: default;
+		}
+		.fav {
+			margin: 3px 0 10px 0;
+			height: 15px;
+			text-align:center;
+			font-size:0;
+			cursor: default;
+		}
+		.good,.bad {
+			margin:0 2px;
+		}
+		.data{
+			width:120px;
+			height:54px;
+			margin: 0 auto 10px;
+			cursor:default;
+			.d-box{
+				width:49%;
+				height:100%;
+				text-align:center;
+				float:left;
+				border-right:1px solid #ebebeb;
+				p{
+					margin-bottom:5px;
+					font-size:12px;
+					line-height:12px;
+				}
+				&.last{
+					border-right:0;
+				}
+			}
+			.tit span{
+				padding:3px 6px;
+				background:#f1f1f1;
+				display:inline-block;
+			}
+			p.ora{
+				color:#ff8a00;
+				font-size:14px;
+				line-height:14px;
+			}
+		}
+		.down{
+			width:86px;
+			height:28px;
+			display:block;
+			margin:0 auto 15px;
+			line-height:28px;
+			text-align:center;
+			font-size:14px;
+			border:1px solid #ccc;
+			@include btnbg;
+			@include bor-radius;
+			&:hover{
+				color:#fff;
+				background:#ff8a00;
+				border-color:#ff8a00;
+			}
+		}
+		.type{
+			color:#999;
+			line-height:22px;
+			cursor:default;
+			
+		}
+		.fav{
+			margin:3px 0 10px 0;
+			height:15px;
+			cursor:default;
+			.good,.bad{
+				display:inline-block;
+				width:15px;
+				height:15px;
+				@include icobg;
+			}
+			.good{
+				background-position:0 -283px;
+			}
+			.bad{
+				background-position:-50px -283px;
+			}
+		}
+		.corner {
+			width: 55px;
+			height: 55px;
+			background: url(http://www.9game.cn/public/images/pc/pc_new/corner_bg.png) no-repeat 100px 100px;
+			_background: url(http://www.9game.cn/public/images/pc/pc_new/corner_bg.gif) no-repeat 100px 100px;
+			position: absolute;
+			top: -4px;
+			left: -4px;
+			z-index: 50;
+		}
+		&.current{
+			display:block;
+		}
+	}
+}

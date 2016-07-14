@@ -1,0 +1,96 @@
+﻿/* 手机游戏视频 */
+.video-ind-con{
+	width:600px;
+	float:left;
+	.left{
+		width:170px;
+		margin-left:10px;
+		_margin-left:5px;
+		float:left;
+		.video-word-con{
+			width:170px;
+			height:95px;
+			margin-bottom:10px;
+			.text{
+				height:22px;
+				line-height:22px;
+				font-size:12px;
+			}
+			.word{
+				width: 83%;
+				padding-left: 26px;
+			}
+			.play{
+				width:24px;
+				height:24px;
+				margin:-12px 0 0 -12px;
+				background-position:8px -157px;
+			}
+			.text .play{
+				margin:0;
+			}
+			&.last{
+				margin-bottom:0;
+			}
+		}
+	}
+	.right{
+		width:400px;
+		float:right;
+		margin-right:10px;
+		.video-word-con{
+			width:400px;
+			height:225px;
+		}
+	}
+	.box-text{
+		padding-top:15px;
+	}
+	.news-list{
+		padding:0;
+		width:100%;
+		li{
+			@include icobg2(1px,-215px);
+			padding-left:18px;
+			a{
+				max-width:100%;
+				_width:98%;
+			}
+			&:hover{
+				background-position:1px -185px;
+			}
+		}
+	}
+}
+
+/* 手机游戏攻略 */
+.raiders-ind-con{
+	width:380px;
+	float:right;
+	.box-text{
+		padding-top:15px;
+	}
+	.left{	
+		margin-bottom: 5px;
+		padding:0 5px;
+		.today-pic{
+			height:134px;
+		}
+		.pic-word-con{
+			width:171px;
+			height:130px;
+			margin:0 5px;
+			float:left;
+		}
+	}
+	.right{
+		.news-list{
+			padding:0 10px;
+			width:100%;
+			a{
+				max-width:100%;
+				_width:98%;
+			}
+		}
+	}
+}

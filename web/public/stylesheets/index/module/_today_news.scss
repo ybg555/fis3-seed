@@ -1,0 +1,319 @@
+﻿/* 游戏icon和文字 */
+@import "../mixin.scss";
+.icon-word-list{
+	li{
+		height:90px;
+		overflow:hidden;
+		border-bottom:1px dotted #ebebeb;
+		cursor:pointer;
+		&:hover{
+			background:#f7f7f7;
+			.tit{
+				color:#f60;
+			}
+		}
+	}
+	a:hover{
+		_display:block;
+		.btn{
+			_color:#fff;
+			_background:#ff8a00;
+			_border-color:#ff8a00;
+		}
+	}
+	.pic{
+		width:70px;
+		margin:10px 10px 0 10px;
+		float:left;
+		position:relative;
+		_cursor:pointer;
+		img{
+			width:70px;
+			height:70px;
+		}
+	}
+	
+	.right-text{
+		margin-left:90px;
+		height:80px;
+		margin-top:10px;
+		_cursor:pointer;
+		.tit{
+			_width:100%;
+			font-size:14px;
+			line-height:14px;
+			margin-bottom:10px;
+			@include hidden;
+		}
+		.text{
+			_width:100%;
+			color:#666;
+			font-size:12px;
+			line-height:14px;
+			margin-bottom:10px;
+			a{
+				color:#666;
+			}
+		}
+		.btn{
+			display:block;
+			width:58px;
+			height:22px;
+			border:1px solid #ccc;
+			line-height:22px;
+			font-size:12px;
+			text-align:center;
+			cursor:pointer;
+			@include btnbg;
+			@include bor-radius;
+			&:hover{
+				color:#fff;
+				background:#ff8a00;
+				border-color:#ff8a00;
+			}
+		}
+	}
+	
+	.corner-nine {
+	  position: absolute;
+	  left: 0;
+	  top: 0;
+	  display: block;
+	  width: 54px;
+	  height: 54px;
+	  background: url(http://portal.ucgc.ucfly.com/public/images/pc/nine_act/nine_active.png) no-repeat 0 -74px;
+	}
+}
+/* 抢礼包 */
+.get-gift-con{
+	width:195px;
+	margin-right:10px;
+	float:left;
+	.icon-word-list{
+		.text{
+			@include hidden;
+		}
+		li{
+			height: 87px;
+		}
+		
+	}
+}
+
+/* 今日新闻 */
+.today-news{
+	width:405px;
+	float:left;
+	.box-text{
+		border:1px solid #ebebeb;
+		border-top:0;
+		padding:15px 10px 0 10px;
+	}
+	.big-new{
+		height:27px;
+		font-size:18px;
+		color:#f60;
+		font-weight:700;
+		text-align:center;
+		@include hidden;
+		a{
+			color:#f60;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	.side-new{
+		height:40px;
+		line-height:40px;
+		font-size:14px;
+		text-align:center;
+		border-bottom:1px dotted #ebebeb;
+		a{
+			width:49%;
+			display:inline-block;
+			@include hidden;
+		}
+	}
+	.news-list{
+		padding-left:0;
+		li{
+			line-height:27px;
+			_line-height:31px;
+			.date{
+				margin:0;
+			}
+		}
+		li a{
+			max-width:90%;
+			_width:86%;
+		}
+	}
+	.little-tit{
+		height:40px;
+		line-height:40px;
+		padding-left:20px;
+		font-size:16px;
+		font-weight:700;
+		border-bottom:1px dotted #ebebeb;
+		@include icobg2(0px,12px);
+	}
+	.today-pic{
+		margin:12px 0 ;
+		height:155px;
+	}
+	.pic-word-con{
+		width:186px;
+		height:150px;
+		float:left;
+		margin-right:3px;
+		&.last{
+			_padding-top:0;
+			margin-right:0;
+		}
+	}
+}
+/* 本周热门 */
+.side-rank{
+	width:250px;
+	float: left;
+	.box-text{
+	height: 530px;
+	overflow:hidden;
+    }
+	&.pcdex{
+	float:right;
+	}
+}
+.side-rank-list{
+	zoom:1;
+	&:after{
+		content: '';
+		visibility: hidden;
+		display: block;
+		clear: both;
+	}
+	& li{
+		float: left;
+		width: 100%;
+		display: block;
+		height: 52px;
+		border-bottom:1px dotted #ebebeb;
+	}
+	& li:hover{
+		background:#f7f7f7;
+		border-bottom:none;
+		height: 53px;
+	}
+	& li .radius32{
+		width: 32px;
+		height: 32px;
+		background: url('http://www.9game.cn/public/images/pc/pc_new/img_radius.png') no-repeat 0 -150px;
+		_background: url('http://www.9game.cn/public/images/pc/pc_new/img_radius.gif') no-repeat 0 -150px;
+		position: absolute;
+		top: 10px;
+		left: 0;
+	}
+	& li .btn{
+		float: left;
+		display: block;
+		margin: 1px auto;
+		width: 23px;
+		height: 23px;
+		margin-top: 15px;
+		border-radius: 3px;
+		background: url(http://www.9game.cn/public/images/pc/pc_new/pcnew_ico.png) no-repeat 100px 100px;
+		_background: url(http://www.9game.cn/public/images/pc/pc_new/pcnew_ico.gif) no-repeat 100px 100px;
+		background-color: #f2f2f2;
+		text-indent:-500px;
+		overflow:hidden;
+	}
+	& li .down{
+		background-position: -89px -80px;
+	}
+	& li:hover .down{
+		background-position: -88px -37px;
+  		background-color: #a3ce0e;	
+	}
+	& li:hover .down.no{
+		@include icobg2(3px,-98px);
+		background-color:#f2f2f2;
+	}
+	& li .down.no{
+		@include icobg2(3px,-98px);
+		background-color:#f2f2f2;
+		cursor:default;
+		&:hover{
+			background-position:3px -98px;
+			background-color:#f2f2f2;
+		}
+	}
+	& li .down:hover{
+		background-position: -88px -37px;
+  		background-color: #a3ce0e;
+	}
+	& li .down-ip{
+		background-position: -128px -60px;
+	}
+	& li:hover .down-ip{
+		background-position: -88px -37px;
+  		background-color: #83a7d4;	
+	}
+	& li .down-ip:hover{
+		background-position: -88px -37px;
+  		background-color: #83a7d4;
+	}
+	& li .side-rank-info{
+		float: left;
+		width:160px;
+		padding: 10px 0 0 0;
+		margin-right:14px;
+		height:32px;
+		position: relative;
+		overflow:hidden;
+		& img {
+			float: left;
+			width: 32px;
+			height:32px;
+			margin-right: 16px;
+		}
+		& p{
+			font-size: 14px;
+			display: inline-block;
+			width: 112px;
+			margin-top: 7px;
+			*margin-top: 5px;
+			float: left;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+		}
+		&:hover p{
+			text-decoration:underline;
+			color: #ff6600;
+		}
+		
+	}
+	.side-rank-num{
+		float: left;
+		width: 17px;
+		height: 17px;
+		line-height: 17px;
+		font-size: 12px;
+		text-align:center;
+		color: #ffffff;
+		background:#999;
+		display: inline-block;
+		margin: 18px 15px 0 10px;
+		cursor:default;
+	}
+	.first .side-rank-num{
+		background:#ff6600;
+	}
+	.second .side-rank-num{
+		background:#ff9000;
+	}
+	.third .side-rank-num{
+		background:#ffc000;
+	}
+}

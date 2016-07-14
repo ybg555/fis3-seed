@@ -1,0 +1,23 @@
+﻿/* 游戏类型选择 */
+.game-style{
+	padding:15px 0 5px 15px;
+	*padding:15px 0 15px 15px;
+	float:left;
+	a{
+		display:inline-block;
+		float:left;
+		width:105px;
+		height:45px;
+		overflow:hidden;
+		background: #f5f5f5;
+		margin:0 10px 10px 0;
+		text-align:center;
+		line-height:45px;
+		font-size:16px;
+		&:hover{
+			background: #ff8a00;
+			color: #fff;
+		}
+		zoom:1;
+	}
+}

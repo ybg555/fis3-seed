@@ -1,0 +1,24 @@
+﻿/* 面包屑 */
+.page-break{
+	margin-bottom:10px;
+	color:#999;
+	line-height:12px;
+	a{
+		padding:0 4px;
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+	span{
+		color:#999;
+		padding:0 4px;
+	}
+	h1{
+		display: inline-block;
+		font-size: 12px;
+		font-weight: 400;
+	}
+	&.padding{
+		padding-left:10px;
+	}
+}

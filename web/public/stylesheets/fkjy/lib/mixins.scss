@@ -1,0 +1,198 @@
+@charset "UTF-8"; 
+
+/* 
+@description: 调用方法设置 -- 九游PC标准官网
+@author: wuwl@ucweb.com ### 20140915
+@update:
+*/
+
+// backup
+// -------------------------
+@mixin title2($left:100px,$top:100px){ 
+  background:url(http://www.9game.cn/public/images/pc/daota/title_bg2.jpg) no-repeat $left $top;
+}
+@mixin normal($left:100px,$top:100px){ 
+  background:url(http://www.9game.cn/public/images/pc/xx/normal_bg.png) no-repeat $left $top;
+}
+@mixin hidden{
+  white-space:nowrap;
+  text-overflow:ellipsis;
+  overflow:hidden;
+}
+
+@mixin zoom{
+	zoom:1;
+  &:after {visibility:hidden;display:block;font-size:0;content:"";clear:both;height:0;}
+}
+
+@mixin leftConBottom{
+	padding-bottom:4px;
+	background:url(http://www.9game.cn/public/images/pc/fknsg/tr_bg.png) repeat-x bottom;
+	@include titBefore(8px, left,-2px, bottom,0 );
+	@include titAfter(8px, right,-2px, bottom,0 );
+}
+@mixin titParam($height,$level,$levelVal,$hori,$horiVal){
+	position:absolute;
+	z-index:1000;
+	#{$level}:$levelVal;
+	#{$hori}:$horiVal;
+	content:"";
+	width:6px;
+	height:$height;
+}
+@mixin titBefore($height,$level,$levelVal,$hori,$horiVal){
+	position:relative;
+	&::before{
+		@include titParam($height,$level,$levelVal,$hori,$horiVal);
+		background:url(http://www.9game.cn/public/images/pc/fknsg/tr_cor.png) left $hori;
+	}
+}
+@mixin titAfter($height,$level,$levelVal,$hori,$horiVal){
+	&::after{
+		@include titParam($height,$level,$levelVal,$hori,$horiVal);
+		background:url(http://www.9game.cn/public/images/pc/fknsg/tr_cor.png) right $hori;
+	}
+}
+@mixin imgSquare($size){
+	display:block;
+	width:$size;
+	height:$size;
+}
+@mixin imgAfter($width, $height, $left, $top){
+	position:absolute;
+	width:$width;
+	height:$height;
+	left:$left;
+	top:$top;
+}
+
+
+// UTILITY MIXINS
+// --------------------------------------------------
+//清除浮动
+@mixin cf {
+	*zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//Common Style 可调用公共属性
+// --------------------------------------------------
+
+//超出文字省略号显示
+@mixin ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+//全文字换行
+@mixin wrap {
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+//定义宽高
+@mixin size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+//定义单行行高
+@mixin line-height($height) {
+  height: $height;
+	line-height:$height;
+}
+
+//边框
+@mixin border($direction:b,$width:1px,$class:solid,$value:$borderColor){
+  @if $direction == "l"
+  {
+    border-left:$width $class $value;
+  }
+  @if $direction == "r"
+  {
+    border-right:$width $class $value;
+  }
+  @if $direction == "t"
+  {
+    border-top:$width $class $value;
+  }
+  @if $direction == "b"
+  {
+    border-bottom:$width $class $value;
+  }
+  @if $direction == a {
+    border:$width $class $value;
+  }
+}
+
+//标准圆角
+@mixin border-radius($radius:$borderRadius) {
+  border-radius:$radius;
+}
+
+//雪碧图 
+@mixin sprite($imgSrc,$repeat:no-repeat) {
+	background-image:url(#{$imgUrl}/#{$imgSrc}.png);
+	background-repeat:$repeat;
+}
+
+//生成元素绝对定位
+@mixin content-a {
+	display:block;
+	content:'';
+	position:absolute;
+}
+//绝对定位垂直居中
+@mixin a-vertical-center($height) {
+	height:$height;
+	top:50%;
+	margin-top:-(0.5*$height);
+}
+//绝对定位水平居中
+@mixin a-hor-center($width) {
+	width:$width;
+	left:50%;
+	margin-left:-(0.5*$width);
+}
+
+//背景变色
+@mixin hover-bg-c($bgColor) {
+	background-color:$bgColor;
+	&:hover {
+		background-color:darken($bgColor,5%);
+	}
+}
+
+//末行无底边线
+@mixin last-no-border {
+	&:last-child {
+		border-bottom-width:0;
+	}
+}
+
+//css箭头
+@mixin arrow($size:5px,$bg_color:#CCC,$direction:bottom){
+	@include size(0,0);
+  border:$size solid transparent; 
+  @if $direction == top {
+    border-bottom-color:$bg_color;
+  } @else if $direction == bottom{
+    border-top-color:$bg_color;
+  } @else if $direction == left{
+    border-right-color:$bg_color;
+  } @else if $direction == right {
+    border-left-color:$bg_color;
+  }
+}
+
+
+

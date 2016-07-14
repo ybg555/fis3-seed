@@ -1,0 +1,275 @@
+﻿@import "../mixin.scss"; 
+/* 网游 焦点图 */
+.ol-popul{
+	margin-bottom:30px;
+}
+.focus-con{
+	width:600px;
+	float:left;
+	.focus-img-con{
+		width:100%;
+		height:340px;
+		overflow:hidden;
+		position:relative;
+		.focus-img{
+			width:100%;
+			height:100%;
+			position:relative;
+			li{
+				width:100%;
+				height:100%;
+				position:absolute;
+				left:0;
+				top:0;
+				display:none;
+				&.current{
+					display:block;
+				}
+				a{
+					display:block;
+				}
+				img{
+					display:block;
+					width:100%;
+					height:100%;
+				}
+				.text{
+					width:100%;
+					height:38px;
+					position:absolute;
+					left:0;
+					bottom:0;
+					line-height:38px;
+					font-size:14px;
+					text-align:center;
+					color:#fff;
+					background:rgb(0 ,0,0);
+					background:rgba(0 ,0,0,0.5);
+				}
+			}
+		}
+		.btn{
+			width:65px;
+			height:120px;
+			display:block;
+			position:absolute;
+			bottom:115px;
+			cursor:pointer;
+			display:none;
+			@include ctrl;
+		}
+		.prev{
+			left:0;
+			background-position:10px 23px;
+			&:hover{
+				background-position:-130px 23px;
+			}
+		}
+		.next{
+			right:0;
+			background-position:-66px 23px;
+			&:hover{
+				background-position:-195px 23px;
+			}
+		}
+	}
+	.focus-ctrl-con{
+		width:100%;
+		height:65px;
+		position:relative;
+		.focus-ctrl{
+			
+			height:100%;
+			position:relative;
+			overflow:hidden;
+			
+			ul{
+				height:65px;
+				position:relative;
+				margin-left:-10px;
+			}
+			li{
+				width:112px;
+				margin-left:10px;
+				_margin-left:8px;
+				float:left;
+				position:relative;
+				
+				a{
+					padding-top:5px;
+					display:block;
+					
+				}
+				img{
+					display:block;
+					width:112px;
+					height:60px;
+				}
+				.meng{
+					display:block;
+					width:112px;
+					height:60px;
+					position:absolute;
+					left:0;
+					bottom:0;
+					background:#000;
+					_display:none;
+					opacity:0.3;
+					-moz-opacity:0.3;
+					filter: Alpha(opacity=30);
+					z-index:10;
+					cursor:pointer;
+				}
+			}
+			li.current a,li a:hover{
+				@include icobg;
+				background-position:-42px -475px;
+			}
+			li.current img,li a:hover img{
+				width:110px;
+				height:58px;
+				border:1px solid #f60;
+			}
+			li.current .meng{
+				display:none;
+			}
+		}
+		.btn{
+			width:18px;
+			height:60px;
+			display:block;
+			position:absolute;
+			bottom:0;
+			@include icobg;
+			background-color:#999;
+			cursor:pointer;
+			&:hover{
+				background-color:#ff8a00;
+			}
+		}
+		.btn.no{
+			background-color:#f5f5f5;
+		}
+		.prev.no{
+			background-position:-153px -430px;
+		}
+		.next.no{
+			background-position:-182px -430px;
+		}
+		.prev{
+			left:0;
+			background-position:-68px -427px;
+		}
+		.next{
+			right:0;
+			background-position:-115px -430px;
+		}
+	}
+}
+
+/* 网游频道--热门新闻 */
+.ol-hotnews-con{
+	width:378px;
+	float:right;
+	.tag-tit {
+		position:relative;
+		.tit{
+			font-size: 16px;
+		}
+		.more{
+			font-size:14px;
+			position:absolute;
+			right: 0px;
+			top: 0px;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	.box-text{
+		height:356px;
+		border:1px solid #ebebeb;
+		border-top:0;
+		padding:5px 10px;
+		overflow:hidden;
+	}
+	.text-con{
+		display:none;
+		&.current{
+			display:block;
+		}
+	}
+	.new-tit-con{
+		border-bottom:1px dotted #ebebeb;
+	}
+	.new-tit{
+		font-size:18px;
+		font-weight:700;
+		text-align:center;
+		line-height:48px;
+		color:#f60;
+		@include hidden;
+		a{
+			color:#f60;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	.side-new{
+		height: 18px;
+		line-height: 18px;
+		font-size: 14px;
+		text-align: center;
+		margin-bottom:22px;
+		a{
+			width: 49%;
+			display: inline-block;
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+	.hotnews-list{
+		margin:2px 0  10px 0;
+		li{
+			height:30px;
+			*height:26px;
+			line-height:30px;
+			*line-height:26px;
+			font-size:14px;
+			overflow:hidden;
+			
+			.type{
+				width: 42px;
+				display:inline-block;
+				padding-right:10px;
+				line-height:14px;
+				float:left;
+				text-align: center;
+				margin-top:9px;
+				border-right:1px solid #d0d0d0;
+			}
+			a.link{
+				width:254px;
+				_width:245px;
+				display:inline-block;
+				padding-left:10px;
+				float:left;
+				@include hidden;
+				&:hover{
+					text-decoration:underline;
+				}
+			}
+			.date{
+				display:inline-block;
+				color:#999;
+				float:right;
+				font-size:12px;
+			}
+		}
+	}
+}

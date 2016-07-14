@@ -1,0 +1,56 @@
+﻿@import "../mixin.scss";
+.topic-list-con{
+	padding-top:10px;
+	li{
+		width:310px;
+		margin:0 0 17px 16px;
+		_margin:0 0 17px 7px;
+		float:left;
+		position:relative;
+		top:0;
+		transition: top 300ms;
+		-moz-transition: top 300ms;
+		-webkit-transition: top 300ms;
+		-o-transition: top 300ms;
+		&:hover{
+			top:-4px;
+			.word{
+				border-color:#ffa800;
+				background:#ffa800;
+				color:#fff;
+			}
+		}
+	}
+	.img{
+		width:310px;
+		height:235px;
+		display:block;
+		img{
+			width:100%;
+			height:100%;
+		}
+		&:hover{
+			width: 306px;
+			height: 231px;
+			border:2px solid #ffa800;
+		}
+	}
+	.word{
+		height:40px;
+		line-height:40px;
+		display:block;
+		padding: 0 5px;
+		border:1px solid #ebebeb;
+		font-size:16px;
+		border-top:0;
+		color:#666;
+		text-align:center;
+		background:#fafafa;
+		@include hidden;
+		&:hover{
+			border-color:#ffa800;
+			background:#ffa800;
+			color:#fff;
+		}
+	}
+}

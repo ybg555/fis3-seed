@@ -1,0 +1,52 @@
+﻿/* 推荐游戏 */
+.game-recom{
+	margin-bottom:30px;
+	.recom-con{
+		height:26px;
+		padding:8px 0;
+		border-bottom:1px dotted #ebebeb;
+		overflow:hidden;
+		white-space:nowrap;
+		.name{
+			display:inline-block;
+			width:60px;
+			height:26px;
+			background:url(http://www.9game.cn/public/images/pc/pc_new/top_classify.png) no-repeat 100px 100px;
+			_background:url(http://www.9game.cn/public/images/pc/pc_new/top_classify.gif) no-repeat 100px 100px;
+			color:#fff;
+			font-size:14px;
+			line-height:26px;
+			text-indent:10px;
+			font-weight:700;
+			cursor:default;
+		}
+		
+		.name.phone{
+			background-position:0 0;
+		}
+		.name.android{
+			background-position:0 -32px;
+		}
+		.name.apple{
+			background-position:0 -64px;
+		}
+		a{
+			font-size:14px;
+			padding:0 12px;
+			line-height: 14px;
+			height:14px;
+			display:inline-block;
+			text-align:center;
+			border-right:1px solid #ebebeb;
+			&.last{
+				border-right:0;
+			}
+			&.hot{
+				color:#f00;
+			}
+			&:hover{
+				text-decoration:underline;
+			}
+		}
+	}
+}

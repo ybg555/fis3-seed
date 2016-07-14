@@ -1,0 +1,62 @@
+﻿@import "../mixin.scss"; 
+/* 推荐游戏 */
+.game-recom{
+	border:1px solid #ebebeb;
+	border-width:1px 0;
+	margin-bottom:10px;
+	.left{
+		width:85px;
+		float:left;
+	}
+	.right{
+		width:900px;
+		float:right;
+	}
+	.recom-con{
+		height:auto;
+		padding:8px 0;
+		border-bottom:1px dotted #ebebeb;
+		overflow:hidden;
+	}
+	.name{
+		width:82px;
+		height:29px;
+		display:inline-block;
+		font-size:14px;
+		line-height:26px;
+		text-indent:10px;
+		color:#fff;
+		font-weight:700;
+		cursor:default;
+		background:url(http://www.9game.cn/public/images/pc/pc_new/top_classify.png) no-repeat 0 -104px;
+		_background:url(http://www.9game.cn/public/images/pc/pc_new/top_classify.png) no-repeat 0 -104px;
+	}
+	.name.phone{
+		background-position:0 0;
+	}
+	.name.android{
+		background-position:0 -33px;
+	}
+	.name.apple{
+		background-position:0 -68px;
+	}
+	a{
+		font-size:14px;
+		padding:0 12px;
+		margin:5px 0;
+		line-height: 14px;
+		height:14px;
+		display:inline-block;
+		text-align:center;
+		border-right:1px solid #ebebeb;
+		&.last{
+			border:0;
+		}
+		&.hot{
+			color:#f00;
+		}
+		&:hover{
+			text-decoration:underline;
+		}
+	}
+}

@@ -1,0 +1,86 @@
+﻿/* 视频介绍 */
+.video-word-con{
+	display:block;
+	position:relative;
+	overflow:hidden;
+	_border:1px solid #fff;
+	.text{
+		width:100%;
+		height:30px;
+		line-height:30px;
+		color:#fff;
+		position:absolute;
+		bottom:0;
+		left:0;
+		background:rgb(0,0,0);
+		background:rgba(0,0,0,0.5);
+		transition: all 300ms;
+		-webkit-transition: all 300ms;
+		-moz-transition: all 300ms;
+		-o-transition: all 300ms;
+		.word{
+			width:88%;
+			height:100%;
+			display:block;
+			padding-left:40px;
+			@include hidden;
+		}
+		.play{
+			display:block;
+			width:30px;
+			height:100%;
+			position:absolute;
+			left:0;
+			top:0;
+			margin:0;
+		}
+	}
+	.play{
+		width:30px;
+		height:30px;
+		position:absolute;
+		left:50%;
+		top:50%;
+		margin: -15px 0 0 -15px;
+		display:none;
+		background:#fc8900 url(http://www.9game.cn/public/images/pc/pc_new/lit_icon.png) no-repeat 11px -122px;
+		_background:#fc8900 url(http://www.9game.cn/public/images/pc/pc_new/lit_icon.gif) no-repeat 11px -122px;
+		
+	}
+	.pic{
+		display:block;
+		width:100%;
+		height:100%;
+	}
+	.meng{
+		width:100%;
+		_width:0;
+		height:100%;
+		_height:0;
+		position:absolute;
+		top:0;
+		left:0;
+		opacity:0;
+		filter:alpha(opacity=0);  
+		background:#000;
+		transition: all 300ms;
+		-webkit-transition: all 300ms;
+		-moz-transition: all 300ms;
+		-o-transition: all 300ms;
+		_display:none;
+	}
+	&:hover{
+		_border:1px solid #f60;
+		.text{
+			bottom:-30px;
+		}
+		.meng{
+			opacity:0.5;
+			filter:alpha(opacity=50); 
+		}
+		.play{
+			display:block;
+			_display:none;
+		}
+	}
+}
