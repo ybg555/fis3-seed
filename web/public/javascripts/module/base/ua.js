@@ -23,4 +23,9 @@ define(function (require) {
 		}
 	})();
 
+	console.info('blade')
+	return {
+		name: 'blade'
+	}
+
 });

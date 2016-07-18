@@ -13,10 +13,10 @@ define(function (require, exports, module) {
 	require("../../module/base/lazyload");
 
 	//判断ua
-	require("../../module/base/ua");
+	var c = require("../../module/base/ua");
 
 	//统计参数
 	require("../../module/stat/stat");
 
-    
+    console.info('in',c)
 });
